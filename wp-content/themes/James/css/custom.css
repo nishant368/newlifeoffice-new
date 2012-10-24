@@ -1,0 +1,94 @@
+/* CHANGE THE COLORS FOR THE THEME HERE */
+body {
+	background: white;
+}
+.body-bricks {
+	background: black;
+}
+#brick-holder {
+	background: black;
+}
+#footer {
+	background: url('../images/menuShine.png') -30px -0px;
+}
+.content {
+	background: url('../images/contentBg.png');
+	color: white;
+}
+.shadowTop {
+	background: url('../images/shadowTop.png');
+}
+#entry-author-info {
+	background: url('../images/authorbg.png');
+}
+h2 {
+	color: white;
+}
+/* COLOR THE BRICKS */
+.brick1 .colorInside {
+	background: #0F9;
+}
+.brick2 .colorInside {
+	background: #FF9;
+}
+.brick3 .colorInside {
+	background: #F03;
+}
+.brick4 .colorInside {
+	background: #F6F;
+}
+.brick5 .colorInside {
+	background: #09F;
+}
+/* GENERAL STYLING OF FONTS */
+.entry-content a, .hentry a, #nav-below a {
+	color: white;
+}
+.copyright a { 
+color: white;
+}
+.entry-title a {
+	color: white;
+}
+.cs-buttons a {
+	background: black;
+	border: 1px solid white;
+}
+.cs-title {
+	background: #333;
+}
+a, a:visited { 
+color: white; 
+}
+/* Heading colors */
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+/* List stles colors (recommend same as p) */
+ul li a, li, ul li, ul {
+	color: white;
+}
+
+/* Button user in theme */
+.sws_btn_black_bg, .search-bar #searchsubmit, input[type="submit"], #commentform #submit {
+	color: #333;
+	background-color: #d3d3d3;
+	background:-moz-linear-gradient(0% 3% 270deg,#e0e0e0, #d3d3d3, #c6c6c6 24%);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#e0e0e0), to(#c6c6c6), color-stop(.2,#d3d3d3));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#c6c6c6');
+}
+.sws_btn_black {
+	border-color:#303030;
+	color:#fff;
+}
+.sws_btn_black span {
+	border-top:1px solid #B8B8B8;
+	color: #656565;
+}
+.sws_btn_black span:hover {
+	color: #fff;
+}
+.sws_btn_black_bg:hover {
+	background:#363636;
+	color: #fff;
+}

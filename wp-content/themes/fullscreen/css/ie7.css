@@ -1,0 +1,12 @@
+.clear 		{ _height: 1%; min-height: 1%; }
+.clearfix 	{ _height: 1%; min-height: 1%; }
+
+.widget_archive li,
+.widget_categories li,
+.widget_meta li,
+.widget_links li		{ _height: 1%; min-height: 1%; }
+
+.wpcf7 p 				{ _height: 1%; min-height: 1%; }
+.gallery 				{ _height: 1%; min-height: 1%; }
+
+.service h3 img		{ top: -1px; }

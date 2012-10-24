@@ -1,0 +1,10 @@
+Sidebar Generator
+Version: 1.1.0
+Author: Kyle Getson
+Plugin URI: http://www.getson.info
+Author URI: http://www.kylegetson.com
+
+Pagination Code
+Version 1.0
+Author: Eric Martin
+Autor URI: http://www.ericmmartin.com/

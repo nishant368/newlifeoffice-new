@@ -1,0 +1,7 @@
+Background_image:
+  id:     page_background_image
+  name:   "Background image"
+  type:   textfield
+  default: "wp-content/themes/fullscreen/images/picture1.jpg"
+    
+  

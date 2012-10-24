@@ -1,0 +1,191 @@
+# Copyright (C) 2010 Twenty Ten
+# This file is distributed under the same license as the James package.
+msgid ""
+msgstr ""
+"Project-Id-Version: James\n"
+"Report-Msgid-Bugs-To: http://theme-dutch.com/wiki-helpdesk\n"
+"POT-Creation-Date: 2011-02-22 08:27:25+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-06-21 14:55+0100\n"
+"Last-Translator: chris <chris@theme-dutch.com>\n"
+"Language-Team: \n"
+
+#. #-#-#-#-#  james.pot (James)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#: footer.php:81
+msgid "Search"
+msgstr "Zoek"
+
+#: footer.php:66,58
+msgid "Login"
+msgstr "Logmein"
+
+#: footer.php:68
+msgid "Recover password"
+msgstr "Haal password op"
+
+#: footer.php:69
+msgid "Register"
+msgstr "Registreer"
+
+#: footer.php:73
+msgid "Hi"
+msgstr "Hallo"
+
+#: sidebar.php:27
+msgid "Archives"
+msgstr "Archief"
+
+#: sidebar.php:34
+msgid "Meta"
+msgstr ""
+
+#: tag.php:6
+msgid "Tag Archives: "
+msgstr "Tag archief:"
+
+#: comments.php:3
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "De post is password beveiligd"
+
+#: comments.php:21
+msgid "Older Comments"
+msgstr "Oudere comments"
+
+#: comments.php:22
+msgid "Newer Comments"
+msgstr "Nieuwere comments"
+
+#: comments.php:28
+msgid "Comments are closed."
+msgstr "Comments gesloten"
+
+#: functions.php:243
+msgid "Leave a Comment"
+msgstr "Plaats comment"
+
+# functions.php:230
+msgid "Your name"
+msgstr "Jou naam"
+
+# functions.php:231
+msgid "Your email"
+msgstr "Jou email"
+
+# functions.php:233
+msgid "Your comment"
+msgstr "Jou comment"
+
+# functions.php:249
+msgid "Leave comment"
+msgstr "Plaats reactie"
+
+# functions.php:247
+msgid "Cancel reply"
+msgstr "Stop reactie"
+
+# functions.php:245
+msgid "Leave a reply %s"
+msgstr "Plaats reactie %s"
+
+#: 404.php:16
+#: loop.php:33
+msgid "Not Found"
+msgstr "Niet gevonden!"
+
+#: 404.php:18
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr "Sorry deze pagina kennen we niet"
+
+#: loop.php:25
+#: loop.php:178
+msgid "Older posts"
+msgstr "Oudere posts"
+
+#: loop.php:26
+#: loop.php:179
+msgid "Newer posts"
+msgstr "Nieuwere posts"
+
+#: loop.php:35
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Geen resultaten gevonden zoek opnieuw"
+
+#: loop.php:69
+msgid "Permalink to "
+msgstr "Permalink naar"
+
+#: loop.php:42
+msgid "Posted in "
+msgstr "Gepost in"
+
+#: loop.php:107
+msgid "Tagged "
+msgstr "Getagd"
+
+#: functions.php:330
+msgid "says:"
+msgstr "Zegt"
+
+#: functions.php:333
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:340
+msgid " at "
+msgstr "Om"
+
+#: functions.php:66
+msgid "Read more"
+msgstr "Lees meer"
+
+#: functions.php:340
+#: functions.php:357
+msgid "(Edit)"
+msgstr "(Bewerk)"
+
+#: functions.php:357
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:467
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr "Gepost op"
+
+msgid "About "
+msgstr "OIver"
+
+#: search.php:6
+msgid "Search results for: "
+msgstr "Zoek resultaten voor"
+
+#: search.php:26
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: search.php:28
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Sorry niets gevonden"
+
+#: loop-single.php:47
+msgid "View all posts by "
+msgstr "Bekijke alle posts van "
+
+#: archive.php:33
+msgid "Daily Archives: "
+msgstr "Dag archief"
+
+#: archive.php:35
+msgid "Monthly Archives: "
+msgstr "Maand archief"
+
+#: archive.php:37
+msgid "Yearly Archives: "
+msgstr "Jaar archief"
+
+#: archive.php:39
+msgid "Blog Archives"
+msgstr "Blog archief"
+

@@ -1,0 +1,320 @@
+.supercustom_cms_section {/*margin-bottom:15px*/}
+/* Custom CSS */
+#supercustom-cms-footer-container {
+	float: left;
+	margin-left: 15px;
+}
+p#safari-fix {
+	display: none;
+}
+#supercustom-cms-footer-logo {
+	float:left;
+	padding-right: 10px;
+}
+
+.video-container {
+	margin-right: 20px;
+	float: left;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.video-container img {
+	margin-bottom: 6px;
+}
+.supercustom_cms_wrap{
+	width:740px;
+}
+
+.supercustom_cms_section{
+	border:1px solid #ddd;
+	border-bottom:0;
+    margin-bottom: 15px;
+}
+.supercustom_cms_opts label{
+	font-size:12px;
+	font-weight:700;
+	width:200px;
+	display:block;
+	float:left;	
+}
+.supercustom_cms_input {
+	clear:both;
+	padding:30px 10px;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #fff;
+	overflow: hidden;
+}
+
+#supercustom_cms_o_head_cap {margin-top:10px;padding-left:30px}
+
+/**************************/
+.supercustom_cms_radioinput {
+	padding:30px 10px;
+	
+}
+.supercustom_cms_input_message1 {
+	padding: 10px 10px;
+	border-bottom: 1px solid #ddd;
+}
+/**************************/
+.supercustom_cms_input_profile {
+	padding:30px 10px 10px 10px;
+}
+.supercustom_cms_checkbox_last {
+	/*padding:10px 10px 30px 10px;*/
+	clear:left;
+	padding: 3px 3px 20px 3px;
+	border-bottom:1px solid #ddd;
+}
+.supercustom_cms_input_local_video {
+	padding: 3px;
+	clear:both;
+}
+.supercustom_cms_input_message {
+	padding: 10px 10px 0;
+	border-bottom: none;
+}
+.supercustom_cms_input_welcome_last {
+	padding:10px 10px 30px 10px;
+	border-bottom:1px solid #ddd;
+}
+.supercustom_cms_opts small{
+	display:block;
+	float:right;
+	width:200px;
+	color:#999;
+}
+.supercustom_cms_opts input[type="text"], .supercustom_cms_opts select{
+	width:250px;
+	font-size:12px;
+	padding:4px;
+	color:#333;
+	line-height:1em;
+	background:#f3f3f3;
+}
+/***************************************************************************************************************/
+.supercustom_cms_optsnew input[type="text"], .supercustom_cms_optsnew select{
+	width:125px;
+	font-size:12px;
+	padding:4px;
+	color:#333;
+	line-height:1em;
+	background:#f3f3f3;
+}
+/***************************************************************************************************************/
+.supercustom_cms_input input:focus, .supercustom_cms_input_welcome_last textarea:focus{
+		background:#fff;
+}
+.supercustom_cms_input_welcome_last textarea{
+	width:280px;
+	height:280px;
+	font-size:10px;
+	padding:4px;
+	color:#333;
+	line-height:1.5em;
+	background:#f3f3f3;
+}
+.supercustom_cms_title h3 {
+	cursor:pointer;
+	font-size:1em;
+	text-transform: uppercase;
+	margin:0;
+	font-weight:bold;
+	color:#232323;
+	float:left;
+	width:80%;
+	padding:14px 4px 4px;
+}
+
+.supercustom_cms_title{
+	cursor:pointer;
+	border-bottom:1px solid #ddd;
+	background:#fff ;
+	padding:0;
+	}
+
+.supercustom_cms_title h3 img.inactive{
+	margin:-8px 10px 0 2px;
+	width:32px;
+	height:32px;	
+	background:url('../images/pointer.png') no-repeat 0 0;
+	float:left;
+	-moz-border-radius:6px;
+	border:1px solid #ccc;
+}
+
+.supercustom_cms_subtitle{
+	cursor:pointer;
+	border-bottom:1px solid #ddd;
+	background:#eee;
+	padding:0;
+	}
+.supercustom_cms_subtitle h3{
+	margin:-8px 10px 0 2px;
+	height:10px;	
+	float:left;
+	-moz-border-radius:6px;
+	 padding: 22px 8px;
+}
+.supercustom_cms_title h3 img.active{
+	margin:-8px 10px 0 2px;
+	width:32px;
+	height:32px;	
+	background:url('../images/pointer.png') no-repeat  0 -32px;
+	float:left;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border:1px solid #ccc;
+}
+		
+.supercustom_cms_title h3:hover img{
+	border:1px solid #999;
+}
+.supercustom_cms_options h4 {
+	font-size: 1.1em;
+	padding: 1.33em 0 1em 10px;
+	margin: 0;
+}
+
+.supercustom_cms_title span.submit{
+	display:block;
+	float:right;
+	margin:0;
+	padding:0;
+	width:15%;
+	padding:12px 0;
+}
+
+.clearfix{
+	clear:both;
+}
+
+.supercustom_cms_table th, .supercustom_cms_table td{
+	border:1px solid #bbb;
+	padding:10px;
+	text-align:center;
+}
+
+.supercustom_cms_table th, .supercustom_cms_table td.feature{
+	border-color:#888;
+	}
+.supercustom_cms_opts label.radioyesno {
+	width: 50px;
+}
+.supercustom_cms_opts label.radioCustom {
+	width: 80px;
+}
+.supercustom_cms_opts label.radioWebsite {
+	width: 80px;
+}
+.supercustom_cms_opts label.radioBlog {
+	width: 60px;
+}
+/*.pretty-hover {
+	background-color: #EEEEEE;
+}*/
+#vVideoVariables .supercustom_cms_input {
+border-bottom: none;
+border-top:none;
+padding:10px 10px;
+}
+#wlcm-reset {
+	margin: 0;
+	padding-top: 0;
+}
+.supercustom-cms-icon32 {
+float:left;
+height:36px;
+margin:0 6px 0 0;
+width:36px;
+}
+#supercustom_cms_o_header_height{
+width:46px;
+}
+#supercustom_cms_o_header_custom_logo_width{
+width:46px;
+}
+#supercustom_cms_o_welcome_visible_to{
+width:80px;
+}
+#supercustom_cms_o_footer_custom_logo_width{
+width:46px;
+}
+#supercustom_cms_o_welcome_visible_to1{
+width:110px;
+}
+.supercustom_cms_input_local_video supercustom_cms_checkbox{
+
+float:left;
+}
+
+#supercustom_cms_o_hide_post_div{
+padding:0 0 0 200px;
+margin-top:-35px;
+float:left;
+width:100px;}
+#supercustom_cms_o_hide_post_divnew{
+padding:0 0 0 50px;
+float:left;
+width:200px;
+margin-top:-35px;
+}
+#supercustom_cms_o_hide_page_div{
+padding:0 0 0 200px;
+float:left;
+margin-top:-35px;
+width:140px;
+}
+#supercustom_cms_o_hide_page_divnew{
+padding:0 0 0px 10px;
+float:left;
+width:200px;
+margin:-35px 0 10px 0;
+}
+#supercustom_cms_o_hide_page_divmain{
+}
+ul.role_name_editor{
+width:650px;}
+ul.role_name_editor li{
+float:left;
+width:200px;
+height:auto;
+}
+#supercustom_cms_o_welcome_visible_to{
+width:110px;
+}
+.supercustom_cms_o_parent_label{
+        width:15px;
+	height:15px;
+        float:left;
+        display:block;	
+	background:url('../images/arrow.gif') no-repeat 5px 2px !important;
+	cursor:pointer;
+        padding:0 0 0 20px;
+}
+.supercustom_cms_o_parent_label_active{
+	background:url('../images/arrow-down.gif') no-repeat 2px 5px !important;
+        padding:0 0 0 20px;
+	
+}
+.supercustom_cms_o_child_label{
+         padding:0 0 0 20px;}
+
+.supercustom_cms_options .plugin-count, .supercustom_cms_options .pending-count, .supercustom_cms_options .update-count {display:none}
+
+#menus {margin-left:10px}
+#menus li {margin-bottom:10px}
+#menus li  ul {padding-top:3px}
+#menus li li {margin:0 0 3px 15px}
+#menus li em {font-style:normal;font-weight:bold;color:#006699}
+#menus li strong {cursor:pointer}
+
+#supercustom-cms-footer-container {position:relative}
+#supercustom-cms-footer-container span {position:absolute;top:20%;width:500px}
+
+#form-show-template { border-top: none; padding: 10px;}
+
+.lineup {float:left}
+
+#vAppearanceMenu .supercustom_cms_checkbox {padding:5px 10px}
+#vAppearanceMenu .supercustom_cms_text {padding-bottom:15px;border-bottom: 1px solid #DDD}

@@ -1,0 +1,354 @@
+general:
+  # ********************************************************************  
+  # General Options
+  box_general_start:
+    type: box_start
+    name: "General Settings"
+  logo_url:        
+    name:       "Logo URL"
+    desc:       "Insert URL for your logo"
+    type:       image_url
+    default:    "wp-content/themes/fullscreen/images/logo_fs.png"
+  show_logo:
+    name:       "Show logo"
+    desc:       "Check if you want to show logo"
+    type:       checkbox
+    default:    0
+  show_title:
+    name:       "Show title"
+    desc:       "Check if you want to show title (Settings -> General -> Site Title)"
+    type:       checkbox
+    default:    0
+  show_subtitle:
+    name:       "Show subtitle"
+    desc:       "Check if you want to show subtitle (Settings -> General -> Tagline)"
+    type:       checkbox
+    default:    0     
+  footer_text:
+    name:       "Footer Text"
+    desc:       ""
+    type:       textarea
+    default:    "© 2011 <a href='http://www.ait-themes.com'>Copyright by AIT.</a> All rights reserved. You can remove this title."
+  ga_code:        
+    name:       "GA Tracking Code"
+    desc:       "Insert GA tracking code for advanced stats"
+    type:       textfield
+  box_general_end:
+    type: box_end
+
+  # ********************************************************************  
+  # General Options
+  box_appearance_start:
+    type: box_start
+    name: "Appearance Settings"
+  show_themebox:        
+    name:       "Show Themebox"
+    desc:       "Please note that Themebox is storing all information in cookies. If you turn off Themebox here, please clear your browser cookies in forder to apply settings correctly."
+    type:       checkbox
+    default:    0
+  background_image:      
+    name:       "Default background image"
+    desc:       "shows on every page, where desktop background was not set"
+    type:       image_url
+    default:    "wp-content/themes/fullscreen/images/default.jpg"
+  background_color:      
+    name:       "Background color"
+    desc:       "if background color was not set"
+    type:       textfield   
+    default:    "#ffffff"
+  decor_lines_color:      
+    name:       "Decor lines color"
+    desc:       ""
+    type:       textfield   
+    default:    "#333333"  
+  titles_color:
+    name:       "Titles color"
+    desc:       ""
+    type:       textfield   
+    default:    "#e4d9ad"
+  center_box_colors:
+    type: 		header
+    name:		"Center Box Variants"	
+  center_box_variant:
+    type: select
+    name: "Center box color variant"
+    default: "Light"
+    desc:  
+    options:
+      light: "Light"
+      dark: "Dark"
+  # light variant
+  center_box_light_variant:
+    type: 		header
+    name:		"Light variant"
+  center_box_light_title_color:
+    name:       "Title color"
+    desc:       ""
+    type:       textfield   
+    default:    "#6293b3"
+  center_box_light_subtitles_color:
+    name:       "Subtitles color"
+    desc:       ""
+    type:       textfield   
+    default:    "#8a8058"
+  center_box_light_links_color:
+    name:       "Links color"
+    desc:       ""
+    type:       textfield   
+    default:    "#6293b3"
+  # dark variant
+  center_box_dark_variant:
+    type: 		header
+    name:		"Dark variant"
+  center_box_dark_title_color:
+    name:       "Title color"
+    desc:       ""
+    type:       textfield   
+    default:    "#7fadc9"
+  center_box_dark_subtitles_color:
+    name:       "Subtitles color"
+    desc:       ""
+    type:       textfield   
+    default:    "#e4d9ad"
+  center_box_dark_links_color:
+    name:       "Links color"
+    desc:       ""
+    type:       textfield   
+    default:    "#ffffff"	
+  height_boxes:
+    type: 		header
+    name:		"Box Heights"
+  left_box_height:
+    type: textfield
+    name: "Left box height (px)"
+    desc: ""
+    default: "315"
+  center_box_height:
+    type: textfield
+    name: "Center box height (px)"
+    desc: ""
+    default: "auto" 
+  right_box_height:
+    type: textfield
+    name: "Right box height (px)"
+    desc: ""
+    default: "315"
+  box_appearance_end:
+    type: box_end 
+    
+  # ********************************************************************  
+  # Left box
+  box_left:
+    type: box_start
+    name: "Left Box"
+  left_box_show:
+    type: select
+    name: "Display"
+    default: "yes" 
+    options:
+      yes: "Yes"
+      no: "No"
+  left_box_show_content:
+    type: select
+    name: "Content"
+    default: "services-area"
+    desc:  
+    options:
+      yes: "Services-area"
+      no: "Widget-area"
+  # 1 service  
+  left_box_services_header:
+    type: header
+    name: "Services"
+  left_box_title:
+    type: textfield
+    name: "Left box title"
+    desc: ""
+    default: "OUR SPECIAL OFFER"
+  left_box_image:
+    type: image_url
+    name: "Left box image"
+    desc: ""
+    default: "wp-content/themes/fullscreen/images/special.jpg"
+  left_box_image_description:
+    type: textfield
+    name: "Left box image description"
+    desc: ""
+    default: "<small><strong>Image description:</strong><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small>"
+  left_box_image_description_more_link:
+    type: textfield
+    name: "Description read more link"
+    desc: ""
+    default: "#"
+  # 1 service  
+  left_box_1_service_header:
+    type: header
+    name: "1. Service"
+  left_box_1_service_title:
+    type: textfield
+    name: "Title"
+    desc: ""
+    default: "List of Actions"
+  left_box_1_service_subtitle:
+    type: textfield
+    name: "Subtitle"
+    desc: ""
+    default: "sed perspiciatis unde omnis"
+  left_box_1_service_icon:
+    type: image_url
+    name: "Icon"
+    desc: ""
+    default: "wp-content/themes/fullscreen/images/icon1.png"
+  left_box_1_service_link:
+    type: textfield
+    name: "Link"
+    desc: ""
+    default: "#"
+  # 2 service  
+  left_box_2_service_header:
+    type: header
+    name: "2. Service"
+  left_box_2_service_title:
+    type: textfield
+    name: "Title"
+    desc: ""
+    default: "Product Presentation"
+  left_box_2_service_subtitle:
+    type: textfield
+    name: "Subtitle"
+    desc: ""
+    default: "sed perspiciatis unde omnis"
+  left_box_2_service_icon:
+    type: image_url
+    name: "Icon"
+    desc: ""
+    default: "wp-content/themes/fullscreen/images/icon2.png"
+  left_box_2_service_link:
+    type: textfield
+    name: "Link"
+    desc: ""
+    default: "#"
+  # 3 service  
+  left_box_3_service_header:
+    type: header
+    name: "3. Service"
+  left_box_3_service_title:
+    type: textfield
+    name: "Title"
+    desc: ""
+    default: "Free Services"
+  left_box_3_service_subtitle:
+    type: textfield
+    name: "Subitle"
+    desc: ""
+    default: "adipisicing elit sed do eiusmod"
+  left_box_3_service_icon:
+    type: image_url
+    name: "Icon"
+    desc: ""
+    default: "wp-content/themes/fullscreen/images/icon3.png"
+  left_box_3_service_link:
+    type: textfield
+    name: "Link"
+    desc: ""
+    default: "#"
+  box_left_end:
+    type: box_end
+  # ********************************************************************  
+  # Home page
+  home_page_start:
+    type: box_start
+    name: "Home Page"
+  home_page_slider_header:
+    type: header
+    name: "Sliders"
+  home_page_slider_description:
+    type: description
+    name: "This sliders appear on home-page, when home-page has no content and is set to show"
+  home_page_slider_show:
+    type: select
+    name: "Enable center slider"
+    default: "yes" 
+    options:
+      yes: "Yes"
+      no: "No"
+  home_page_background_slider_enable:
+    type: select
+    name: "Enable background slider"
+    default: "yes" 
+    options:
+      yes: "Yes"
+      no: "No"
+  home_page_bg_slider_effect:
+    type: select
+    name: "Background slider effect"
+    default: "transition"
+    options:
+      yes: "Transition"
+      no: "Light"
+  home_page_slider_delay:
+    type: textfield
+    name: "delay (in millisec)"
+    default: "3000"
+  home_page_slider_animation_time:
+    type: textfield
+    name: "animation time (in millisec)"
+    default: "600"
+  home_page_slider_images:
+    type: clone_home_slider
+    name: "Clone Slider"
+  home_page_end:
+    type: box_end
+  # ********************************************************************  
+  # Rigth box
+  box_right:
+    type: box_start
+    name: "Right Box"
+  right_box_show:
+    type: select
+    name: "Display"
+    default: "yes" 
+    options:
+      yes: "Yes"
+      no: "No"
+  right_box_description:
+    type: description
+    name: "This content is generated from <b>rightbox widget area</b> (Appearance -> Widgets -> Rightbox widget area)"
+  box_right_end:
+    type: box_end  
+   
+  # ********************************************************************  
+  # Footer
+  box_footer:
+    type: box_start
+    name: "Footer"
+  default_footer_height:
+    type: textfield
+    name: "Default footer height (px)"
+    desc: ""
+    default: "30"
+  rollUp_footer_height_auto:
+    name:       "Auto roll-up footer height"
+    desc:       "Check if you want to roll-up footer to height by footer content (Roll-up footer height value in pixels ignore)"
+    type:       checkbox
+    default:    0
+  rollUp_footer_height:
+    type: textfield
+    name: "Roll-up footer height (px)"
+    desc: ""
+    default: "150"
+  footer_gallery_header:
+    type: header
+    name: "Footer gallery"
+  footer_gallery_show:
+    type: select
+    name: "Display"
+    default: "no"
+    options:
+      yes: "Yes"
+      no: "No"
+  footer_clone_picture:
+    type: clone_picture
+    name: "Footer pictures"
+  box_footer_end:
+    type: box_end

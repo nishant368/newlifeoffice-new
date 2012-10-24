@@ -1,0 +1,1077 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sideways WordPress Portfolio Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-14 12:16-0000\n"
+"PO-Revision-Date: 2011-12-14 12:16-0000\n"
+"Last-Translator: Eugene Okoronkwo <hellow@raw-brand.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:25
+msgid "Return to Home page"
+msgstr ""
+
+#: ../404.php:32
+msgid "404 Sidebar"
+msgstr ""
+
+#: ../archive-horizontal.php:19
+#, php-format
+msgid "Archive for the &#8216;%s&#8217; category"
+msgstr ""
+
+#: ../archive-horizontal.php:21
+#: ../archive-vertical.php:22
+#, php-format
+msgid "Posts Tagged &#8216;%s&#8217;"
+msgstr ""
+
+#: ../archive-horizontal.php:23
+#: ../archive-horizontal.php:25
+#: ../archive-horizontal.php:27
+#: ../archive-vertical.php:24
+#: ../archive-vertical.php:26
+#: ../archive-vertical.php:28
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: ../archive-horizontal.php:29
+#: ../archive-vertical.php:30
+msgid "Author Archive"
+msgstr ""
+
+#: ../archive-horizontal.php:31
+#: ../archive-vertical.php:32
+msgid "Blog Archives"
+msgstr ""
+
+#: ../archive-horizontal.php:193
+#: ../archive-vertical.php:99
+#: ../blog-horizontal.php:172
+#: ../blog-vertical.php:80
+msgid "More"
+msgstr ""
+
+#: ../archive-horizontal.php:217
+#: ../archive-vertical.php:112
+msgid "No results found"
+msgstr ""
+
+#: ../archive-horizontal.php:223
+#: ../archive-vertical.php:116
+#, php-format
+msgid "Sorry, but there aren't any posts in the %s category yet."
+msgstr ""
+
+#: ../archive-horizontal.php:225
+#: ../archive-vertical.php:118
+msgid "Sorry, but there aren't any posts with this date."
+msgstr ""
+
+#: ../archive-horizontal.php:228
+#: ../archive-vertical.php:121
+#, php-format
+msgid "Sorry, but there aren't any posts by %s yet."
+msgstr ""
+
+#: ../archive-horizontal.php:230
+#: ../archive-vertical.php:123
+msgid "No posts found."
+msgstr ""
+
+#: ../archive-vertical.php:20
+#, php-format
+msgid "Archive for &#8216;%s&#8217;"
+msgstr ""
+
+#: ../archive-vertical.php:39
+#: ../blog-vertical.php:20
+msgid "Article Sidebar"
+msgstr ""
+
+#: ../archive.php:5
+msgid "Vertical Layout"
+msgstr ""
+
+#: ../comments.php:14
+msgid "Comments"
+msgstr ""
+
+#: ../comments.php:14
+msgid "1 Comment"
+msgstr ""
+
+#: ../comments.php:14
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:40
+msgid "Leave a Comment"
+msgstr ""
+
+#: ../comments.php:40
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../comments.php:47
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../comments.php:55
+#, php-format
+msgid "Logged in as %s"
+msgstr ""
+
+#: ../comments.php:55
+msgid "Log out of this account"
+msgstr ""
+
+#: ../comments.php:55
+msgid "Log out &raquo;"
+msgstr ""
+
+#: ../comments.php:60
+#: ../contact.php:63
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:63
+msgid "Email Address (not published)"
+msgstr ""
+
+#: ../comments.php:66
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:71
+#: ../contact.php:75
+msgid "Message"
+msgstr ""
+
+#: ../comments.php:74
+msgid "Submit Comment"
+msgstr ""
+
+#: ../contact.php:56
+msgid "There was an error submitting your message."
+msgstr ""
+
+#: ../contact.php:69
+msgid "Email Address"
+msgstr ""
+
+#: ../contact.php:82
+msgid "Send copy of email to yourself"
+msgstr ""
+
+#: ../contact.php:84
+msgid "Send"
+msgstr ""
+
+#: ../contact.php:86
+msgid "If you want to submit this form, do not enter anything in this field"
+msgstr ""
+
+#: ../contact.php:99
+msgid "Thanks. Your message has been sent."
+msgstr ""
+
+#: ../contact.php:109
+msgid "Contact Sidebar"
+msgstr ""
+
+#: ../header-horizontal.php:30
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../navigation.php:44
+msgid "Contact Page"
+msgstr ""
+
+#: ../navigation.php:45
+msgid "Follow the RSS"
+msgstr ""
+
+#: ../navigation.php:46
+msgid "Follow on Facebook"
+msgstr ""
+
+#: ../navigation.php:47
+msgid "Follow on Twitter"
+msgstr ""
+
+#: ../navigation.php:48
+msgid "Follow on Google+"
+msgstr ""
+
+#: ../navigation.php:49
+msgid "Follow on Digg"
+msgstr ""
+
+#: ../navigation.php:50
+msgid "Follow on Myspace"
+msgstr ""
+
+#: ../navigation.php:51
+msgid "Follow on Dribbble"
+msgstr ""
+
+#: ../navigation.php:52
+msgid "Follow on Flickr"
+msgstr ""
+
+#: ../navigation.php:53
+msgid "Follow on LinkedIn"
+msgstr ""
+
+#: ../navigation.php:54
+msgid "Follow on Vimeo"
+msgstr ""
+
+#: ../navigation.php:55
+msgid "Follow on YouTube"
+msgstr ""
+
+#: ../navigation.php:90
+msgid "Navigation"
+msgstr ""
+
+#: ../page.php:49
+#: ../single-portfolio-default.php:68
+msgid "Page Sidebar"
+msgstr ""
+
+#: ../portfolio-grid.php:45
+#: ../portfolio-horizontal.php:27
+msgid "All"
+msgstr ""
+
+#: ../search-horizontal.php:17
+#: ../search-vertical.php:19
+#, php-format
+msgid "Search Results for \"%s\""
+msgstr ""
+
+#: ../search-horizontal.php:187
+#: ../search-vertical.php:166
+msgid "Please try another search term."
+msgstr ""
+
+#: ../single-portfolio.php:4
+msgid "Gallery"
+msgstr ""
+
+#: ../single-portfolio.php:7
+msgid "Default"
+msgstr ""
+
+#: ../single-portfolio.php:10
+msgid "Full Width"
+msgstr ""
+
+#: ../single.php:77
+msgid "Page: "
+msgstr ""
+
+#: ../raw_framework/raw_comments.php:26
+msgid "says:"
+msgstr ""
+
+#: ../raw_framework/raw_comments.php:31
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../raw_framework/raw_comments.php:38
+msgid "Reply"
+msgstr ""
+
+#: ../raw_framework/raw_contact_form.php:18
+msgid "You forgot to enter your name."
+msgstr ""
+
+#: ../raw_framework/raw_contact_form.php:26
+msgid "You forgot to enter your email address."
+msgstr ""
+
+#: ../raw_framework/raw_contact_form.php:29
+msgid "You entered an invalid email address."
+msgstr ""
+
+#: ../raw_framework/raw_contact_form.php:37
+msgid "You forgot to enter your message."
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:106
+#: ../raw_framework/raw_panel/raw_panel.php:426
+#: ../raw_framework/raw_panel/raw_panel.php:427
+msgid "Light Rounded"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:109
+#: ../raw_framework/raw_panel/raw_panel.php:426
+msgid "Dark Rounded"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:112
+#: ../raw_framework/raw_panel/raw_panel.php:426
+msgid "Light Square"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:115
+#: ../raw_framework/raw_panel/raw_panel.php:426
+msgid "Dark Square"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:118
+#: ../raw_framework/raw_panel/raw_panel.php:426
+msgid "Facebook"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:201
+msgid "Sidebar used on pages."
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:210
+msgid "Sidebar used on 404 page."
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:219
+msgid "Sidebar used on blog index page and posts."
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:228
+msgid "Sidebar used on contact template."
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:297
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:298
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:299
+msgid "Add New"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:300
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:301
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:302
+msgid "New Portfolio Item"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:303
+msgid "View Portfolio Item"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:304
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:305
+msgid "Nothing found"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:306
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:328
+#: ../raw_framework/raw_functions.php:329
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:330
+msgid "Search Category"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:331
+msgid "Popular Categories"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:332
+#: ../raw_framework/raw_panel/raw_panel.php:19
+#: ../raw_framework/raw_panel/raw_panel.php:32
+msgid "All Categories"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:333
+msgid "Edit Category"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:334
+msgid "Update Category"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:335
+msgid "Add New Category"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:336
+msgid "New Category Name"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:337
+msgid "Add or remove category"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:338
+msgid "Choose from the most used categories"
+msgstr ""
+
+#: ../raw_framework/raw_functions.php:339
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../raw_framework/raw_navigation.php:11
+msgid "Main Navigation"
+msgstr ""
+
+#: ../raw_framework/raw_navigation.php:12
+msgid "Footer Navigation"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:46
+msgid "A list of most viewed blog posts."
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:82
+msgid "views"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:102
+#: ../raw_framework/plugins/raw_widgets.php:173
+#: ../raw_framework/plugins/raw_widgets.php:240
+#: ../raw_framework/plugins/raw_widgets.php:334
+#: ../raw_framework/plugins/raw_widgets.php:403
+#: ../raw_framework/plugins/raw_widgets.php:509
+msgid "Title:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:105
+#: ../raw_framework/plugins/raw_widgets.php:176
+#: ../raw_framework/plugins/raw_widgets.php:406
+msgid "Number of Posts:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:119
+msgid "A list of posts related to the current page by first category."
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:191
+msgid "A stream of latest tweets from the specified twitter account."
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:223
+msgid "Follow"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:244
+msgid "Twitter Username:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:248
+msgid "Number of Tweets:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:262
+msgid "Buttons linking to social network pages."
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:348
+msgid "A list of recent blog posts"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:383
+msgid "No recent posts."
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:418
+msgid "Contact details"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:466
+msgid "Tel"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:470
+msgid "Mobile"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:474
+msgid "Fax"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:512
+msgid "Address:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:520
+msgid "Phone:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:521
+msgid "Mobile:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:522
+msgid "Fax:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:525
+msgid "Website:"
+msgstr ""
+
+#: ../raw_framework/plugins/raw_widgets.php:526
+msgid "Email:"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:46
+msgid "Background Options"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:53
+msgid "Background Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:54
+msgid "Select which image to use as the page background"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:57
+msgid "Featured Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:57
+msgid "URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:57
+msgid "Slide Show"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:61
+msgid "Background Image URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:62
+msgid "Enter the URL to the page background image (Only used when \"URL\" is selected in the drop down box above)."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:77
+msgid "Portfolio Index Options"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:85
+msgid "Select Portfolio Category"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:86
+msgid "Select which category to display in this portfolio."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:94
+msgid "Enable Portfolio jQuery Filter"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:95
+msgid "Check to enable jQuery sorting on portoflio index page."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:103
+msgid "Portfolio Items Per Page"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:104
+msgid "Enter the number of portfolio items to show on each page. Pagination will not work if there are other page's have this page set as parent. '-1' will display all items without pagination."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:117
+msgid "Portfolio Options"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:123
+msgid "Portfolio Page Layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:124
+msgid "Select the page layout to be used for this portfolio item."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:130
+#: ../raw_framework/raw_panel/raw_panel.php:188
+msgid "Video URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:131
+#: ../raw_framework/raw_panel/raw_panel.php:189
+msgid "Enter the URL to a Vimeo or YouTube video page to turn the post into a video post."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:136
+msgid "Open In Lightbox"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:137
+msgid "Select to open as a lightbox item (instead of navigating to the page) when the item\\s image is clicked in the portfolio index."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:142
+msgid "Show Featured Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:143
+msgid "Select to show the featured image on the page. If you have added lightbox items to the textbox above the lightbox gallery will be opened by clicking the featured image."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:153
+msgid "Page Options"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:159
+msgid "Page Title"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:160
+msgid "Enter the title as it will be displayed on the page."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:165
+#: ../raw_framework/raw_panel/raw_panel.php:182
+msgid "Subtitle"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:166
+msgid "Enter any text you want to appear in the header below the page title."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:176
+msgid "Post Options"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:183
+msgid "Enter any text you want to below the post title."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:194
+msgid "Disable Author Bio"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:195
+msgid "Select to disable author bio at the end of this post."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:200
+msgid "Hide Featured Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:201
+msgid "Select to hide the feature image on this post."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:355
+#: ../raw_framework/raw_panel/raw_panel.php:445
+#: ../raw_framework/raw_panel/raw_panel.php:682
+msgid "General"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:363
+msgid "Settings"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:369
+msgid "Contact Form Address"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:370
+msgid "Enter the email address that contact form submissions should be sent to"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:378
+msgid "Analytics Code"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:379
+msgid "Place here any HTML you wish to add to the bottom of all pages"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:389
+msgid "jQuery Plugins"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:395
+msgid "Smooth Scroll"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:396
+msgid "Check to enable Smooth Scroll jQuery plugin."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:404
+msgid "PrettyPhoto Lightbox"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:405
+msgid "Check to enable Pretty Photo Lightbox jQuery plugin."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:413
+msgid "Lightbox Thumbnail Overlay"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:414
+msgid "Check to enable small image thumbnail on Pretty Photo Lightbox galleries."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:422
+msgid "Lightbox Style"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:423
+msgid "Select the styling used for lightbox galleries"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:437
+msgid "Appearance"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:451
+msgid "Default Background URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:452
+msgid "Enter the URL to the website default background image (1440px x 900px recommended)"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:459
+msgid "Logo URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:460
+msgid "Enter the URL to your logo image (100px x 100px recommended)"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:467
+msgid "Custom Favicon"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:468
+msgid "A favicon is a 16x16 pixel icon that represents your site; paste the URL to a .ico image that you want to use as the website favicon"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:475
+msgid "Apple Bookmark Icon URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:476
+msgid "An icon used by apple devices (iPhone, iPod, iPad)"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:483
+msgid "Accent Colour"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:484
+msgid "Enter the hex value of the colour to be used for links and buttons (e.g. #FF0000)"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:492
+msgid "Custom CSS"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:493
+msgid "Place any custom CSS above. This overrides any other stylesheets. eg: a.button{color: #FFF}"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:500
+msgid "Enable Header Search Form"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:501
+msgid "Check to enable search form in page header."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:512
+msgid "Blog"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:518
+msgid "Blog Page background Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:519
+msgid "Enter URL of the blog page background. Leave blank to use the website default background"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:526
+msgid "Blog Index Layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:527
+msgid "Select the preferred blog index layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:530
+#: ../raw_framework/raw_panel/raw_panel.php:618
+#: ../raw_framework/raw_panel/raw_panel.php:645
+#: ../raw_framework/raw_panel/raw_panel.php:646
+msgid "Horizontal Layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:531
+#: ../raw_framework/raw_panel/raw_panel.php:619
+msgid "Horizontal Search"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:536
+msgid "Enable Author Name Post Meta"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:537
+msgid "Displays the author of a post in the post meta"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:545
+msgid "Enable Date Post Meta"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:546
+msgid "Displays the date of a post in the post meta"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:554
+msgid "Enable Categories Post Meta"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:555
+msgid "Displays the post's categories in the post meta"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:567
+msgid "404"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:573
+msgid "404 Page background Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:574
+msgid "Enter URL of the 404 page background. Leave blank to use the website default background"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:581
+msgid "404 Page Title"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:582
+msgid "The title displayed on the 404 error page."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:589
+msgid "404 message"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:590
+msgid "The message displayed on the 404 error page."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:600
+msgid "Search"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:606
+msgid "Search Page background Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:607
+msgid "Enter URL of the search page background. Leave blank to use the website default background"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:614
+msgid "Search Layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:615
+msgid "Select the preferred search results page layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:627
+msgid "Archive"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:633
+msgid "Archive Page background Image"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:634
+msgid "Enter URL of the archive page background. Leave blank to use the website default background"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:641
+msgid "Archive Layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:642
+msgid "Select the preferred archive layout"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:655
+msgid "Footer"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:661
+msgid "Footer Text"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:662
+msgid "Enter text shown beside copyright symbol in the footer"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:674
+msgid "Social Networks"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:689
+msgid "If possible make sure you are not logged into any accounts when you copy / paste your social network profile URLs."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:695
+msgid "Contact Page URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:696
+msgid "Enter URL to contact page to display link to contact page in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:703
+msgid "Enable RSS Link"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:704
+msgid "Display RSS link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:711
+msgid "Facebook Page URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:712
+msgid "Enter URL to facebook page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:719
+msgid "Twitter Page URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:720
+msgid "Enter URL to Twitter page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:727
+msgid "Google+ Page URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:728
+msgid "Enter URL to Google+ page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:735
+msgid "Digg Page URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:736
+msgid "Enter URL to Digg page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:743
+msgid "Myspace Profile URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:744
+msgid "Enter URL to MySpace page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:751
+msgid "Dribbble Profile URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:752
+msgid "Enter URL to Dribbble page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:759
+msgid "Flickr Stream URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:760
+msgid "Enter URL to Flickr page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:767
+msgid "LinkedIn Page URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:768
+msgid "Enter URL to LinkedIn page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:775
+msgid "Vimeo URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:776
+msgid "Enter URL to Vimeo page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:783
+msgid "YouTube Channel URL"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:784
+msgid "Enter URL to YouTube page to display link in Social menu"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:990
+msgid "settings saved."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:991
+msgid "settings reset."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:1000
+msgid "Welcome to the Raw Options panel. From here you can customise your WordPress website by configuring the options found below."
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:1141
+#: ../raw_framework/raw_panel/raw_panel.php:1149
+msgid "On"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:1142
+#: ../raw_framework/raw_panel/raw_panel.php:1150
+msgid "Off"
+msgstr ""
+
+#: ../raw_framework/raw_panel/raw_panel.php:1192
+msgid "Save Changes"
+msgstr ""
+

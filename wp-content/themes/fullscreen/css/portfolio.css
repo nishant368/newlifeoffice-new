@@ -1,0 +1,73 @@
+.portfolio-website {
+	padding: 10px;
+	margin-bottom: 20px !important;
+}
+.website-thumbnail {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.website-thumbnail img {
+	border: 1px solid #555;
+	margin: 0;
+	padding: 0;
+}
+.website-name {
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.website-name a,.website-url a {
+	text-decoration: none;
+}
+.website-name a:hover,.website-url a:hover {
+	text-decoration: underline;
+}
+.website-url {
+	font-size: 9pt;
+	font-weight: bold;
+}
+.website-url a {
+	color: #666666;
+}
+.website-description {
+	margin-top: 15px;
+}
+.website-clear {
+	clear: both;
+}
+
+.portfolio-paging {
+	text-align: center;
+	padding: 4px 10px 4px 10px;
+	margin: 0 10px 20px 10px;
+}
+.portfolio-paging .page-count {
+	margin-bottom: 5px;
+}
+.portfolio-paging .page-jump b {
+	padding: 5px;
+}
+.portfolio-paging .page-jump a {
+	text-decoration: none;
+}
+
+.portfolio-website								{ padding: 0px !important; }
+.portfolio-website .website-thumbnail			{ margin-bottom: 0px; }
+.portfolio-website .website-thumbnail img		{ display: block; margin-bottom: 0px; padding: 4px; border: 1px solid #E8E8E8; background: #FFFFFF; /*-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; */}
+.portfolio-website .website-name 				{ font-size: 16px; font-weight: normal; padding-top: 5px; margin: 0px 0px 5px 0px;}
+.portfolio-website .website-name a				{ text-decoration: none; }
+.portfolio-website .website-name a:hover		{ text-decoration: none; }
+.portfolio-website .website-url					{ font-size: 11px; font-weight: normal;} 
+.portfolio-website .website-description			{ margin-top: 10px; line-height: 20px;}
+.wpp-creditlink									{ display: none; }
+
+.wp-portfolio-widget								{ font-size: 11px; line-height: 14px; }
+.wp-portfolio-widget .wp-portfolio-widget-des		{ font-size: 11px; line-height: 14px; padding: 0px 0px 10px 0px; margin-bottom: 10px; background: url('../images/dots.gif') repeat-x left bottom; margin: 0px;}
+.wp-portfolio-widget .widget-portfolio				{ padding: 0px 0px 10px 0px; background: url('../images/dots.gif') repeat-x left bottom; margin-bottom: 10px; }
+.wp-portfolio-widget .widget-website-thumbnail		{ width: auto; margin: 0px 0px 13px 0px; padding: 2px; background: #959595; }
+.wp-portfolio-widget .widget-website-thumbnail:hover{ background: #FFFFFF; }
+.wp-portfolio-widget .widget-website-thumbnail a	{ display: block; width: 100%; height: 130px; overflow: hidden; }
+.wp-portfolio-widget .widget-website-thumbnail img	{ display: block; width: 100%; height: auto; border-width: 0px; }
+.wp-portfolio-widget .widget-website-name			{ text-align: center; line-height: 16px; font-size: 13px; font-weight: normal; margin-bottom: 6px; }
+.wp-portfolio-widget .widget-website-name a			{ text-decoration: none; }
+.wp-portfolio-widget .widget-website-description	{ text-align: center; font-size: 11px; line-height: 14px; height: 42px; overflow: hidden; }

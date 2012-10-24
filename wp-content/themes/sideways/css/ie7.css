@@ -1,0 +1,44 @@
+.search{ 
+	
+	width: 200px;
+
+}	
+
+#searchbar form {
+	
+	height: 28px;
+	
+}
+
+#searchbar  .text {
+	
+	float: right;
+	
+}
+
+#searchbar  .searchsubmit {
+
+	border: none;
+
+}
+
+#submit {
+	
+	clear: both;
+	
+}
+
+#portfolio .info {
+	
+	height: 160px;
+	left: 0;
+	top: 0;
+	width: 160px;
+	
+}
+
+#portfolio .info p{
+	
+	display: none;
+	
+}

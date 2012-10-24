@@ -1,0 +1,1 @@
+<?php supercustom_cms_admin() ?>

@@ -1,0 +1,89 @@
+.theme-admin            { width: 800px; }
+.theme-admin-box        { border: 1px solid #e3e3e3; margin: 0px 0px 10px 0px;      
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px; 
+}
+.theme-admin-head       { border-top: 1px solid #fff; background: #f1f1f1; height: 28px; padding: 15px 10px; position: relative; 
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px; 
+}
+
+.theme-admin-head.expanded {
+    border-bottom: 1px solid #e3e3e3;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+}
+
+.theme-admin h3    { color: #21759B; float: left; font-weight: normal; margin: 4px 0px 0px 68px;  }
+.theme-admin h4    { background: #f1f1f1; border: 1px solid #DFDFDF; clear: both; margin: 12px 5px 15px 5px;  padding: 10px 10px; overflow: hidden; width: 766px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.theme-admin-head p     { float: right; margin: 0px; padding: 0px; }
+.theme-admin-content    { background: #fff; display: none; font-size: 11px; height: auto; position: relative;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+.theme-admin-row        { border-top: 0px solid #e3e3e3; overflow: hidden; padding: 3px 10px; }
+.theme-admin-row-title  { float: left; font-weight: bold; line-height: 24px; width: 185px; }
+.theme-admin-row-input  { }
+.theme-admin-row-input .regular-text { width: 550px; }
+.theme-admin-row-input .regular-image { width: 445px; }
+.theme-admin-row-input .media-select { width: 100px; }
+
+
+.theme-admin-textfield              { }
+.theme-admin-textfield .description { margin-left: 180px; }
+.theme-admin-textarea textarea      { height: 100px; width: 550px; }
+.theme-admin-checkbox               { }
+.theme-admin-checkbox .description  { padding: 0px 0px 0px 5px; vertical-align: middle;  }
+
+.expanded   {}
+.expander   { border-right: 1px solid #e3e3e3; color: #aaa; cursor: pointer; font-size: 10px; line-height: 60px; height: 60px; left: -1px; position: absolute; letter-spacing: 1px; text-align: center; text-transform: uppercase; top: -2px; width: 58px; 
+    text-shadow: 1px 1px #fff; 
+}
+.expander:hover { color: #7F7F7F; }
+
+.expander-wrap { border-right: 1px solid #fff; height: 59px; position: absolute; left: 0px; top: 1px; width: 57px; }
+
+.title-header { background: #ECECE3; margin: 0px 0px 10px 0px; padding:0 0 5px 20px; }
+.title-inline { float: left; font-size: 12px !important; line-height: 16px; margin: 0px !important; width: 200px; }
+.title-block  { float: left; font-size: 12px !important; line-height: 30px; margin: 0px !important; width: 200px; }
+
+.custom-field           { float: left; overflow: hidden; width: 100%; margin: 0px 0px 5px 10px; }
+.custom-field .label    { float: left; font-size: 10px; font-weight: bold; line-height: 26px; width: 10%; }
+
+.field-header           { background: #f1f1f1; border: 1px solid #DFDFDF; clear: both; float: left; margin: 15px 0px; overflow: hidden; width: 100%; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.field-header h4        { margin: 0px; padding: 10px 10px; }
+.field-text             {}
+.field-text input       { font-family: 'Arial', sans-serif; font-size: 12px; width: 70%; }
+.field-textarea         {}
+.field-textarea textarea { font-family: 'Arial', sans-serif; font-size: 12px; }
+.field-select           {  }
+.field-select select    { font-family: 'Arial', sans-serif; font-size: 12px; width: 26%; }
+
+.left-col                   { float: left; width: 49%; }
+.left-col .label            { float: left; line-height: 26px; width: 35%; }
+.left-col .value input      { width: 59%; }
+.left-col .value select     { width: 59%; }
+.left-col .value select     { width: 59%; }
+.right-col                  { float: right; margin: 0px 0px 5px 0px; width: 49%; }
+.right-col .label           { float: left; line-height: 26px; width: 35%; }
+.right-col .value textarea  { height: 83px; width: 59%; }
+.right-col .value input      { width: 59%; }
+.right-col .value select     { width: 59%; }
+
+p.weight { padding-right: 10px; }
+p.weight input { width: 20px; }
+
+#sheepItFormPictures_controls div, #sheepItFormPictures_controls div input { float:left; margin: 10px; }
+
+#sheepItFormHomeSlider_controls div, #sheepItFormHomeSlider_controls div input { float:left; margin: 10px; }

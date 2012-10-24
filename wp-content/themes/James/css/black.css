@@ -1,0 +1,105 @@
+/* CHANGE THE COLORS FOR THE THEME HERE */
+body {
+	background: white;
+}
+.body-bricks {
+	background: black;
+}
+#brick-holder {
+	background: black;
+}
+#footer {
+	background: url('../images/menuShine.png') -30px -0px;
+}
+.content {
+	background: url('../images/contentBg.png');
+	color: white;
+}
+.toggle-content, .toggle-content a, toggle-content li, .toggle-content li a { color: black; }
+.shadowTop {
+	background: url('../images/shadowTop.png');
+}
+#entry-author-info {
+	background: url('../images/authorbg.png');
+}
+.sidebarShadowTop { background: url('../images/sidebarShadow.png'); }
+.sidebar-wrap { background: transparent url('../images/sidebarContent.png'); }
+h2 {
+	color: white;
+}
+/* COLOR THE BRICKS */
+.brick1 .colorInside {
+	background: #0F9;
+}
+.brick2 .colorInside {
+	background: #FF9;
+}
+.brick3 .colorInside {
+	background: #F03;
+}
+.brick4 .colorInside {
+	background: #F6F;
+}
+.brick5 .colorInside {
+	background: #09F;
+}
+/* GENERAL STYLING OF FONTS */
+.entry-content a, .hentry a, #nav-below a {
+	color: white;
+}
+.copyright a { 
+color: white;
+}
+.entry-title a {
+	color: white;
+}
+.cs-buttons a {
+	background: black;
+	border: 1px solid white;
+}
+.cs-title {
+	background: #333;
+}
+a, a:visited { 
+color: white; 
+}
+/* Heading colors */
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+/* List stles colors (recommend same as p) */
+ul li a, li, ul li, ul {
+	color: white;
+}
+#footer ul li a { color : white; }
+
+/* Button user in theme */
+.sws_btn_black_bg, .search-bar #searchsubmit, input[type="submit"], #commentform #submit, form.eshop input.button { color: #333; background-color: #d3d3d3; background:-moz-linear-gradient(0% 3% 270deg,#e0e0e0, #d3d3d3, #c6c6c6 24%); background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#e0e0e0), to(#c6c6c6), color-stop(.2,#d3d3d3)); filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#c6c6c6'); }
+.sws_btn_black { border-color:#303030; color:#fff; }
+.sws_btn_black span { border-top:1px solid #B8B8B8; color: #656565; }
+.sws_btn_black span:hover { color: #fff; }
+.sws_btn_black_bg:hover { background:#363636; color: #fff; }
+.search-bar #s, .login-form input[type="text"], .login-form input[type="password"] { background: #555; color: white; }
+.login-icon { background: url("../images/sprite.png") no-repeat scroll -149px 8px transparent; }
+.searchWrap { background: url('../images/searchClose.png') no-repeat right top; }
+.loginWrap { background: url('../images/searchClose.png') no-repeat right top; }
+.login-content { background: url('../images/sprite.png') no-repeat 0px -66px; }
+.search-content { background: url('../images/sprite.png') no-repeat 0px -66px; }
+#galleryNav { background: url('../images/bg-menu.png'); }
+#slidecaption { color: white; }
+#slidecaption a { color: white; }
+#slidecounter { color:#888; }
+#controls-icon { background: url('../images/sprite.png') no-repeat -149px -16px; }
+#controls-close { background: url('../images/searchClose.png'); }
+#footer .sub-menu li { background: url('../images/bg-menu.png'); }
+.searchTooltip, .loginTooltip, .galleryTooltip { color: white; }
+.saleCategory.odd { background: #e3e3e3; color: black; }
+.saleCategory.odd h1, .saleCategory.odd h2, .saleCategory.odd h3, .saleCategory.odd h4, .saleCategory.odd h5, .saleCategory.odd h6, .saleCategory.odd p, .saleCategory.odd li, .saleCategory.odd a { color: black; }  
+.saleCategory.even { background: grey; }
+.saleCategory.odd .salePrice { background: black; color: white; }
+.salePrice { background: black; color: white;  }
+.saleCategory.even .salePrice { background: black; color: white;  }
+.saleCategory.even #SaleNav a {  padding: 1px; display: block; border: 1px solid #e3e3e3; }
+.saleCategory.odd #SaleNav a {  padding: 1px; display: block; border: 1px solid gray; }
+.saleCategory.odd .readmoreButton, .saleCategory.odd .readmoreButton a { background: grey; color: white; }
+.login-form { color: white; }

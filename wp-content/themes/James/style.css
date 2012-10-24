@@ -1,0 +1,546 @@
+@charset "UTF-8";
+/*
+
+Theme Name: James (shared on themelock.com)
+Theme URI: http://www.theme-dutch.com/presents/james
+Description: James a premium wordpress theme made by Theme Dutch.
+Version: 1.1
+Tags: custom-background, translation-ready, editor-style, custom-menu
+Author: Theme Dutch
+Author URI: http://www.theme-dutch.com/
+License: GNU GENERAL PUBLIC LICENSE
+License URI: http://www.theme-dutch.com/presents/james/license.txt
+
+01. RESET
+02. GLOBAL ELEMENTS
+03. FONTS
+04. MAIN STRUCTURE
+05. BRICKS
+06. LOGO
+07. MENU
+08. CONTENT
+09. NAVIGATION
+10. COMMENTS
+11. SIDEBAR AND WIDGETS
+12. FOOTER
+13. CONTACT
+14. SHORTCODES
+15. BACKGROUND
+16. IMAGES
+17. MOBILE
+18. SUPERSIZED (BACKGROUND IMAGES)
+19. SLIDER
+20. ISOTOPE / BRICKS
+21. COLORBOX
+
+/* ________________________________________________________________________________________________________________
+							01. RESET
+________________________________________________________________________________________________________________ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline; }
+.menu-main a { color: white; }
+body { line-height: 1; }
+h1, h2, h3, h4, h5, h6 { clear: both; font-weight: bold; }
+ol, ul { list-style: none; list-style-type: circle; }
+blockquote { quotes: none; }
+blockquote:before, blockquote:after { content: ''; content: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+a img { border: none; }
+a { text-decoration: none; }
+textarea { resize: none; } 
+
+/* ________________________________________________________________________________________________________________
+							02. GLOBAL ELEMENTS
+________________________________________________________________________________________________________________ */
+
+h1 {line-height: 1.5em;margin: 0 0 20px 0;font-size: 36px;}
+h2 {line-height: 1.5em;margin: 0 0 20px 0;font-size: 32px;}
+h3 {line-height: 1.5em;margin: 0 0 20px 0;font-size: 28px;}
+h4 {line-height: 1.5em;margin: 0 0 20px 0;font-size: 24px;}
+h5 {line-height: 1.5em;margin: 0 0 20px 0;font-size: 20px;}
+h6 {line-height: 1.5em;margin: 0 0 20px 0;font-size: 16px;}
+body, input, textarea { font-size: 12px; line-height: 1.5em; }
+hr { border: 0; clear: both; height: 1px; margin-bottom: 18px; }
+ul { list-style: square; margin: 0 0 18px 1.5em; }
+ol { list-style: decimal; margin: 0 0 18px 1.5em; }
+ol ol { list-style: upper-alpha; }
+ol ol ol { list-style: lower-roman; }
+ol ol ol ol { list-style: lower-alpha; }
+ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+dl { margin: 0 0 24px 0; }
+dt { font-weight: bold; }
+dd { margin-bottom: 18px; }
+strong { font-weight: bold; }
+cite, em, i { font-style: italic; }
+big { font-size: 131.25%; }
+ins { text-decoration: none; }
+blockquote { font-style: italic; padding: 0 3em; }
+blockquote cite, blockquote em, blockquote i { font-style: normal; }
+pre { line-height: 1.5em; margin-bottom: 18px; padding: 1.5em; }
+abbr, acronym { cursor: help; }
+sup, sub { height: 0; line-height: 1; position: relative; vertical-align: baseline; }
+sup { bottom: 1ex; }
+sub { top: .5ex; }
+input[type="text"], textarea { padding: 2px; }
+.screen-reader-text { position: absolute; left: -9000px; }
+.main-content object { max-width: 550px; }
+.main-content embed{ max-width: 550px; margin: 10px 0px; z-index: 1; }
+.main-content iframe { max-width: 550px; margin: 10px 0px; z-index: 1; }
+#bgholder embed, #bgholder iframe, #bgholder object, .box embed, .box iframe, .box object { z-index: -1; }
+
+/* ________________________________________________________________________________________________________________
+							03. FONTS
+							This is for the loading of the google fonts 
+________________________________________________________________________________________________________________ */
+
+.wf-loading p { font-family: calibri }
+.wf-inactive p { font-family: calibri }
+.wf-loading p { font-family: calibri; font-size: 16px }
+.wf-inactive h1 { font-family: calibri; font-size: 16px; }
+
+/* ________________________________________________________________________________________________________________
+							04. MAIN STRUCTURE
+________________________________________________________________________________________________________________ */
+
+.main-wrap { height: 100%; width: 865px; float: right; }
+.sidebar { width: 220px;  float: left; position: relative; left: 10px; top: 25px; display: none; }
+.content { height: 100%; float: left; padding: 0px 30px; padding-bottom: 40px; width: 560px; position: relative; top: 0px; }
+.contentShadowBottom { width: 100%; height: 8px; float: left;  background: url('images/shadowBottom.png'); }
+.shadowTop { width: 560px; height: 50px; padding: 0px 30px; position: relative; }
+.rightside { background: url('images/shadow-r.png'); height: 100%; position: absolute; right: -10px; top: 0; width: 10px; }
+.leftside { background: url('images/shadow-l.png'); height: 100%; position: absolute; left: -10px; top: 0; width: 10px; }
+.shadowL { background: url('images/shadow-l.png'); width: 10px; height: 90%; }
+.colorPick { display: none; }
+#mainWrap { position: relative; min-height: 100%; }
+.main { float: left; width: 620px; }
+#branding { width: 620px; }
+.wrapper { width: 620px; float: left; position: relative; margin-left: 165px; }
+.spacer { clear: both; }
+.container { width: 620px; float: right; margin-right: 25px; height: 100%; margin-top: 25px; margin-bottom: 30px; z-index: 999; }
+.HomeLine { height: 100%; width:1px; position: absolute; }
+#galleryNav { position: absolute; bottom: 76px; width: 100%; height: 100px; }
+.hiddenLink { display: none; visibility: hidden; }
+.contentImageFull { margin-left: -20px; float: left; }
+.clickHide { width: 30px; height: 30px; background: url('images/sprite.png') no-repeat -125px -31px; position: absolute; top: 14px; right: 16px; }
+.no-results #s, .error404 #s { float: left; margin-right: 5px; }
+.no-results #searchform, .error404 #searchform { margin-top: 10px; }
+
+/* ________________________________________________________________________________________________________________
+							05. BRICKS
+________________________________________________________________________________________________________________ */
+
+#brick-holder { width: auto; height: auto; margin: 0 auto; }
+#leftBrick { position: absolute; height: 100%; width: 30px; background: url('images/shadowL.png') repeat-y; z-index: 3; left: 0px; top: 0px; }
+#rightBrick { position: absolute; height: 100%; width: 30px; background: url('images/shadowR.png') repeat-y; z-index: 3; right: 0px; top: 0px; }
+.brick1 { width: 144px; height: 144px; }
+.brick2 { width: 294px; height: 144px; }
+.brick3 { width: 294px; height: 294px; }
+.brick4 { width: 594px; height: 294px; }
+.brick5 { width: 144px; height: 294px; }
+.brick6 { width: 594px; height: 294px; }
+.box { overflow: hidden; border: 3px solid black; }
+.colorInside { width: 100%; height: 100%; display: none; position: absolute; top: 0px; left: 0px; }
+.boxInside { width: 100%; height: 100%; display: none; position: absolute; top: 0px; left: 0px; }
+.brickMore { background: url('images/sprite.png') no-repeat -190px 0px; bottom: 0; height: 50px; position: absolute; right: 0; width: 50px; z-index: 999; }
+.boxMargin { margin: 10px; }
+.brickTitle { font-size: 18px; font-weight: bold; margin-bottom: 5px; }
+#brick-holder .cboxElement { width: 100%; height: 100%; display: block; position: absolute; z-index: 999; }
+
+/* ________________________________________________________________________________________________________________
+							06. LOGO
+________________________________________________________________________________________________________________ */
+
+.logo { top: 14px; height: 76px; position: relative; left: 20px; float: left; }
+.logo a { display: table-cell; vertical-align: middle; height: 76px; }
+.logo img { max-height: 70px; vertical-align: middle; }
+.wp-post-image { margin: 0px 0 0 -20px; width: 600px; }
+.hentry .wp-post-image { max-width: 300px; height: auto; }
+
+/* ________________________________________________________________________________________________________________
+							07. MENU
+________________________________________________________________________________________________________________ */
+
+#footer ul { margin: 0px 0px 14px 0px; }
+.menu-header { float: left; margin-top: 14px; margin-left: 40px; }
+#footer ul li {  float: left; list-style: none; margin-right: 25px; line-height: 75px; }
+#footer ul li ul li { float: none; line-height: 25px; }
+.menuHeaderStripe { position: relative; right: -12px; top: -1px; }
+#footer .sub-menu { background: url('images/bg-menu-holder.png') repeat-y 100% 0; position: absolute; bottom: 76px; width: 100%; display: none; left: 0px; margin: 0px; height: auto; }
+#footer .sub-menu li { width: 100%; margin-top: 0px; }
+.menu-right { float: right; margin-left: 5px; line-height: 70px; }
+@media screen and (-webkit-min-device-pixel-ratio:0){.menu-right { margin-top: -75px; }}
+#footer .menu-right ul li { line-height: 72px; margin-right: 5px; }
+
+/* ________________________________________________________________________________________________________________
+							08. CONTENT
+________________________________________________________________________________________________________________ */
+
+.content ul ul, .content ol ol, .content ul ol, .content ol ul { margin-bottom: 0; }
+.content pre, .content kbd, .content tt, .content var { font-size: 15px; line-height: 21px; }
+.content code { font-size: 13px; }
+.content table { margin: 0 -1px 24px 0; text-align: left; width: 100%; }
+.content tr th, .content thead th { font-size: 12px; font-weight: bold; line-height: 18px; padding: 9px 24px; }
+.content tr td { padding: 6px 24px; }
+.home .sticky { margin-left: -20px; margin-right: -20px; padding: 18px 20px; }
+.page-title { font-size: 14px; font-weight: bold; margin: 0 0 36px 0; }
+.page-title span { font-size: 16px; font-style: italic; font-weight: normal; }
+.page-title a:link, .page-title a:visited { text-decoration: none; }
+.blog-post { margin-bottom: 60px; }
+.entry-title { font-size: 21px; font-weight: bold; line-height: 55px; }
+.entry-content-text { margin-top: 10px; margin-bottom: 10px; float: left; max-width: 560px; width: 100%; overflow: hidden; }
+.entry-bar a { font-size: 12px; }
+.single-post .entry-bar { margin-top: 10px; }
+.entry-bar { margin: 10px 0px; float: left; }
+.bar-icon { background: url('images/sprite.png') no-repeat; margin-right: 5px; width: 16px; height: 16px; display: block; float: left; }
+.bar-float { float: left; margin-right: 5px; }
+.clearFloat { clear: both; }
+.bar-icon.date { background-position: 0px -21px; }
+.bar-icon.author { background-position: -50px -21px; }
+.bar-icon.cat { background-position: -34px -21px; }
+.bar-icon.comment { background-position: -17px -21px; }
+.bar-icon.tag { background-position: -67px -21px; }
+.entry-title a { font-size: 21px; } .blog-top, .page-top { position: relative; }
+.td-page-icon { width: 102px; height: 40px; left: 468px; bottom: 0px; *top: 0px; position: absolute; overflow: hidden; }
+.entry-title a:link, .entry-title a:visited { text-decoration: none; }
+.entry-meta { font-size: 12px; }
+.entry-meta abbr, .entry-utility abbr { border: none; }
+.entry-content, .entry-summary { clear: both; }
+.entry-summary { text-align: justify; }
+.content .entry-summary p:last-child { margin-bottom: 12px; }
+.entry-content fieldset { margin: 0 0 24px 0; padding: 24px; }
+.entry-content fieldset legend { font-weight: bold; padding: 0 24px; }
+.entry-content input { margin: 0 0 24px 0; }
+.entry-content input.file, .entry-content input.button { margin-right: 24px; }
+.entry-content label { font-size: 12px; }
+.entry-content select { margin: 0 0 24px 0; }
+.entry-content sup, .entry-content sub { font-size: 10px; }
+.entry-content blockquote.left { float: left; margin-left: 0; margin-right: 24px; text-align: right; width: 33%; }
+.entry-content blockquote.right { float: right; margin-left: 24px; margin-right: 0; text-align: left; width: 33%; }
+.page-link { clear: both; font-weight: bold; margin: 0 0 22px 0; word-spacing: 0.5em; }
+.page-link a:link, .page-link a:visited { font-weight: normal; padding: 0.5em 0.75em; text-decoration: none; }
+body.page .edit-link { clear: both; display: block; }
+#entry-author-info { clear: both; font-size: 14px; line-height: 20px; margin: 24px 0; margin-left: -20px; overflow: hidden; width: 560px; padding: 0px 20px; }
+#entry-author-info #author-avatar { float: left; height: 60px; margin: 0 -104px 0 0; padding: 10px 0px; }
+#entry-author-info #author-description { float: left; margin: 0 0 0 104px; width: 360px; padding: 10px 0px; }
+#entry-author-info h2 { font-size: 100%; font-weight: bold; margin-bottom: 0; }
+.entry-utility { clear: both; font-size: 12px; line-height: 18px; }
+.content .video-player { padding: 0; }
+.saleImages { width: 165px; height: 130px; float: left; display: block;}
+.saleImgWrap { width: 165px; height: auto; float: left; margin: 20px 0px; position: relative; }
+.saleImg1 { width: 160px; height: 90px; padding-top: 70px; }
+.saleImg1 span { width: 70px; height: 20px; background: black; padding: 5px; }
+.saleImgOther { width: 77.5px; height: 77.5px; background: grey; margin-right: 5px; margin-top: 5px; float: left; }
+.salePrice { position: absolute; top: 50px; z-index: 9; min-width: 10px; height: 25px; display: block; padding: 0px 10px 0px 5px; line-height: 23px; }
+.contentSaleImgOn { width: 375px; float: left; margin-left: 20px; }
+#slideshow { left: 20px }
+#SaleNav { margin: 0px; width: 166px; display: block; }
+#SaleNav li { width: 77.5px; float: left; list-style: none; margin-right: 5px; margin-top: 5px; }
+#SaleNav .odd { width: 78.5px; }
+#SaleNav a {  padding: 1px; display: block; }
+#SaleNav li.activeSlide a { background: #e3e3e3; }
+#SaleNav a:focus { outline: none; }
+#SaleNav img { border: none; display: block }
+.saleCategory { width: 560px; padding: 0px 20px; margin-left: -20px; }
+.saleSingle { width: 560px; padding: 0px 20px; margin-left: -20px; }
+.readmore { position: relative; bottom: 10px; min-width: 10px; margin-top: 10px; float: right; }
+.readmoreButton { padding: 5px; }
+
+/* ________________________________________________________________________________________________________________
+							09. NAVIGATION
+________________________________________________________________________________________________________________ */
+
+.navigation { font-size: 12px; line-height: 18px; overflow: hidden; }
+.navigation a:link, .navigation a:visited { text-decoration: none; }
+.nav-previous { float: right; }
+.nav-next { float: left; }
+#nav-above { margin: 0 0 18px 0; }
+#nav-above { display: none; }
+.paged #nav-above, .single #nav-above { display: block; }
+#nav-below { width: 100%; }
+
+/* ________________________________________________________________________________________________________________
+							10. COMMENTS
+________________________________________________________________________________________________________________ */
+
+#comments { clear: both; }
+#comments .navigation { padding: 0 0 18px 0; }
+h3#comments-title, h3#reply-title { font-size: 20px; font-weight: bold; margin-bottom: 0; }
+h3#comments-title { padding: 24px 0; }
+.commentlist { list-style: none; margin: 0; }
+.commentlist li.comment { line-height: 24px; margin: 0 0 24px 0; padding: 0 0 0 66px; position: relative; background: url('images/patternDot.png') repeat-x bottom; }
+.commentlist li:last-child { border-bottom: none; margin-bottom: 0; }
+#comments .comment-body ul, #comments .comment-body ol { margin-bottom: 18px; }
+#comments .comment-body p:last-child { margin-bottom: 6px; }
+#comments .comment-body blockquote p:last-child { margin-bottom: 24px; }
+.commentlist ol { list-style: decimal; }
+.commentlist .avatar { position: absolute; top: 4px; left: 0; }
+.comment-author { }
+.comment-author cite { font-style: normal; font-weight: bold; }
+.comment-author .says { font-style: italic; }
+.comment-meta { font-size: 12px; margin: 0 0 18px 0; }
+.comment-meta a:link,
+.comment-meta a:visited { text-decoration: none; }
+.commentlist .even { }
+.commentlist .bypostauthor { }
+.reply { font-size: 12px; padding: 0 0 24px 0; }
+.commentlist .children { list-style: none; margin: 0; margin-left: -20px; }
+.commentlist .children li { border: none; margin: 0; background: none; }
+.nopassword, .nocomments { display: none; }
+#comments .pingback { margin-bottom: 18px; padding-bottom: 18px; }
+.commentlist li.comment+li.pingback { margin-top: -6px; }
+#comments .pingback p { display: block; font-size: 12px; line-height: 18px; margin: 0; }
+#comments .pingback .url { font-size: 13px; font-style: italic; }
+#respond { margin: 0; overflow: hidden; position: relative; }
+#respond input[type="text"] { height: 22px; }
+#respond p { margin: 0; }
+#respond .comment-notes { margin-bottom: 1em; }
+.form-allowed-tags { display: none; }
+.children #respond { margin: 0 48px 0 0; }
+h3#reply-title { margin: 18px 0; }
+#comments-list #respond { margin: 0 0 18px 0; }
+#comments-list ul #respond { margin: 0; }
+#respond p.logged-in-as { margin-bottom: 5px; }
+#cancel-comment-reply-link { font-size: 12px; font-weight: normal; line-height: 18px; }
+#respond .required, .contact-label .required { font-weight: bold; }
+#respond label { font-size: 12px; }
+#respond input { margin: 0 0 9px; width: 98%; }
+#respond textarea { width: 98%; }
+#respond .form-allowed-tags { font-size: 12px; line-height: 18px; }
+#respond .form-allowed-tags code { font-size: 11px; }
+#respond .form-submit { margin: 12px 0; }
+#respond .form-submit input  { font-size: 14px; width: auto; height: 30px; text-align: center; vertical-align: middle; font-size: 12px; line-height: 18px; cursor: pointer; }
+
+/* ________________________________________________________________________________________________________________
+							11. SIDEBAR AND WIDGETS
+________________________________________________________________________________________________________________ */
+
+.sidebar-content ul { margin: 0; padding: 0; }
+.sidebar-content ul li { list-style: none; }
+.sidebar-content ul li ul li { margin-left: 13px; list-style: square; }
+.sidebar-content h3 { margin: 0; }
+.widget-container { margin-bottom: 15px; }
+.widget-area { margin-left: 30px; width: 170px; }
+.widget-area input { max-width: 94%; }
+.sidebarShadowTop { width: 100%; height: 50px; }
+#eshopws { width: 100px; margin-right: 5px; }
+.sidebar input[type="submit"] { float: none; }
+#calendar_wrap table { width: 100%; }
+.widget_search #s { width: 100px; margin-right: 5px; }
+
+/* ________________________________________________________________________________________________________________
+							12. FOOTER
+________________________________________________________________________________________________________________ */
+
+.loginWrap { position: absolute; right: 135px; top: -26px; height: 40px; }
+.login-icon { width: 40px; height: 25px; float: right; margin-top: 5px; }
+.login-content { position: relative; width: auto; height: 35px; float: right; left: 0px; visibility: hidden; padding: 0px 5px; top: 5px; }
+.login-form { margin: 0px 5px; }
+.login-form input { float: left; width: 60px; border: none; }
+.login-form #log {  display: block; float: left; height: 20px; margin-right: 5px; margin-top: 7px; padding: 0px 5px; }
+.login-form #pwd {  display: block; float: left; height: 20px; margin-right: 5px; margin-top: 6.5px; padding: 0px 5px; }
+.login-form .loginButton { margin-top: 7px; width: auto; margin-right: 10px; }
+.login-form form { float: left; font-size: 10px; }
+.login-form a { float: left; font-size: 11px;  }  
+.login-form .logout { margin-top: -5px; }
+.register { margin-top: -6px; }
+.recover { margin-top: 0px; }
+.clearAll { clear: both; }
+.searchWrap { position: absolute; right: 90px; top: -26px; height: 40px; }
+.search-content { position: relative; width: auto; height: 35px; float: right; left: 0px; visibility: hidden; padding: 0px 5px; top: 5px; }
+.searchWrap .social {	margin-top: 8px; margin-right: 5px; height: 20px; float: right; }
+.search-icon { background: url("images/sprite.png") no-repeat scroll -149px 8px transparent; width: 40px; height: 25px; float: right; margin-top: 5px; }
+.search-bar { float: right; margin-left: 5px; margin-right: 5px; height: 35px; }
+.searchTooltip { position: absolute; top: -30px; right: 0px; background: grey; background: url('images/tooltipBg.png') right; display: none; height: 25px; padding: 0px 5px; }
+.loginTooltip { position: absolute; top: -30px; right: 0px; background: grey; background: url('images/tooltipBg.png') right; display: none; height: 25px; padding: 0px 5px; }
+.galleryTooltip { position: absolute; top: -30px; right: 0px; background: url('images/tooltipBg.png') right; display: none; height: 25px; padding: 0px 5px; }
+.search-bar #searchform { margin-top: 5px; }
+.search-bar #s { padding: 0px; height: 20px; display: block; float: left; margin-top: 2px; margin-right: 5px; padding: 0px 5px; border: none; width: 90px; }
+.social a { width: 20px; height: 20px; display: block; float: left; margin-left: 5px; }
+.social .youtube { background: url('images/sprite.png') no-repeat 0px 0px; }
+.social .twitter { background: url('images/sprite.png') no-repeat -20px 0px; }
+.social .rss { background: url('images/sprite.png') no-repeat -40px 0px; }
+.social .flickr { background: url('images/sprite.png') no-repeat -80px 0px; }
+.social .facebook { background: url('images/sprite.png') no-repeat -100px 0px; }
+.social .linkedin { background: url('images/sprite.png') no-repeat -60px 0px; }
+.copyright { margin-top: 14px; margin-right: 30px; line-height: 75px; font-size: 9px; letter-spacing: 1px; text-decoration: none; text-transform: uppercase; float: right; }
+.social img { width: 20px; height: 20px; }
+#footer { float: right; width: 100%; min-width: 980px; position: fixed; height: 90px; bottom: 0px; z-index: 999; }
+.footerMenu { width: 620px; float: left; position: relative; z-index: 99; margin-top: 10px; margin: 10px auto 0; padding:0; overflow: hidden; height: 20px; }
+.footerMenu ul { display:inline; margin:0; list-style:none; margin-top: 10px; }
+.menu-footer ul li { display:inline; margin:0; }
+.menu-footer ul li a { font-size: 11px; letter-spacing: 1px; text-decoration: none; text-transform: uppercase; margin-right: 7px; }
+.footerMenu img { margin-bottom: 1px; margin-right: 5px; }
+.lastFooterItem img { display: none; }
+.footerShadow { position: absolute; top: -19px; left: 0px; height: 46px; width: 620px; }
+
+/* ________________________________________________________________________________________________________________
+							13. CONTACT
+________________________________________________________________________________________________________________ */
+
+.contact-field input[type="text"] { margin: 0 0 9px; width: 47%; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.contact-field textarea { margin: 0 0 9px; width: 98%; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.contact-field textarea { height: 100px; }
+.contact-field #contact-submit { font-size: 14px; width: auto; height: 40px; text-align: center; vertical-align: middle; font-size: 12px; line-height: 18px; cursor: pointer; text-decoration: none; display: table-cell; padding: 0px 10px; }
+/* ________________________________________________________________________________________________________________
+							14. SHORTCODES
+________________________________________________________________________________________________________________ */
+
+.td-button { cursor: pointer; display: table-cell; font-size: 12px; height: 40px; line-height: 18px; padding: 0 10px; text-align: center; text-decoration: none; vertical-align: middle; width: auto; }
+.td-button span { display: table-cell; height: 40px; vertical-align: middle; }
+/* ---------------------------------- */
+.tdN-button, .tdN-button span { display: inline-block; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; text-decoration: none; }
+.tdN-button { white-space: nowrap; line-height:1em; position:relative; outline: none; overflow: visible; cursor: pointer; border: 1px solid #999; border: rgba(0, 0, 0, .2) 1px solid; border-bottom:rgba(0, 0, 0, .4) 1px solid; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); box-shadow: 0 1px 2px rgba(0,0,0,.2); background: -moz-linear-gradient(center top, rgba(255, 255, 255, .1) 0%, rgba(0, 0, 0, .1) 100% ); background: -webkit-gradient( linear, center bottom, center top, from(rgba(0, 0, 0, .1)), to(rgba(255, 255, 255, .1)) ); filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000')";  -moz-user-select: none; -webkit-user-select:none; -khtml-user-select: none; user-select: none; }
+button::-moz-focus-inner { border: none; }
+button.tdN-button  { padding:0px; margin:0; }
+.tdN-button.full, .tdN-button.full span { display: block; }
+.tdN-button:hover, .tdN-button.hover { background: -moz-linear-gradient(center top,	rgba(255, 255, 255, .2) 0%,	rgba(255, 255, 255, .1) 100%); background: -webkit-gradient(linear,center bottom,center top,from(rgba(255, 255, 255, .1)),to(rgba(255, 255, 255, .2))); filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#33FFFFFF', EndColorStr='#19FFFFFF'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#33FFFFFF', EndColorStr='#19FFFFFF')"; }
+.tdN-button:active, .tdN-button.active { background: -moz-linear-gradient(center top,rgba(0, 0, 0, .1) 0%,rgba(255, 255, 255, .1) 100%); background: -webkit-gradient(linear,center bottom, center top,from(rgba(255, 255, 255, .1)),to(rgba(0, 0, 0, .1))); filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#19000000', EndColorStr='#19FFFFFF'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#19000000', EndColorStr='#19FFFFFF')"; }
+.tdN-button span { position: relative; color:#fff; text-shadow:0 1px 1px rgba(0, 0, 0, 0.25); border-top: rgba(255, 255, 255, .2) 1px solid; padding:0.6em 1.3em; line-height:1em; text-decoration:none; text-align:center; white-space: nowrap; }
+@media screen and (-webkit-min-device-pixel-ratio:0) { button.tdN-button span { margin-top: -1px; margin-left:-2px; margin-right:-2px; } }
+.search-bar #searchsubmit, input[type="submit"], #commentform #submit, .loginButton, .readmoreButton { white-space: nowrap; line-height:1em; position:relative; outline: none; overflow: visible; cursor: pointer; border: 1px solid #999; border: rgba(0, 0, 0, .2) 1px solid; border-bottom:rgba(0, 0, 0, .4) 1px solid; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); box-shadow: 0 1px 2px rgba(0,0,0,.2); background: -moz-linear-gradient( center top, rgba(255, 255, 255, .1) 0%, rgba(0, 0, 0, .1) 100% ); background: -webkit-gradient( linear, center bottom, center top, from(rgba(0, 0, 0, .1)), to(rgba(255, 255, 255, .1)) ); filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000')";  -moz-user-select: none; -webkit-user-select:none; -khtml-user-select: none; user-select: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 11px; float: left; margin-top: 2px; }
+.ui-accordion { min-width: 100%; }
+
+/* ________________________________________________________________________________________________________________
+							15. BACKGROUND
+________________________________________________________________________________________________________________ */
+
+#bgholder { width:100%; height:100%; overflow:hidden; position:fixed; left:0; top:0; z-index:-2; color:#000; }
+#bgholder img#bgimg { visibility: visible; width: 100%; height: 100%; }
+
+/* ________________________________________________________________________________________________________________
+							16. IMAGES
+________________________________________________________________________________________________________________ */
+
+img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img { max-width: 100%; height: auto; }
+.alignleft, img.alignleft { display: inline; float: left; margin-right: 24px; margin-top: 4px; }
+.alignright, img.alignright { display: inline; float: right; margin-left: 24px; margin-top: 4px; }
+.aligncenter, img.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+img.alignleft, img.alignright, img.aligncenter { margin-bottom: 12px; }
+.wp-caption { line-height: 18px; margin-bottom: 20px; max-width: 632px !important;  padding: 4px; text-align: center; }
+.wp-caption img { margin: 5px 5px 0; }
+.wp-caption p.wp-caption-text { font-size: 12px; margin: 5px; }
+.wp-smiley { margin: 0; } 
+.gallery { margin: 0 auto 18px; }
+.gallery .gallery-item { float: left; margin-top: 0; text-align: center; width: 33%; }
+.gallery-columns-2 .gallery-item { width: 50%; }
+.gallery-columns-4 .gallery-item { width: 25%; }
+.gallery-columns-2 .attachment-medium { max-width: 92%; height: auto; }
+.gallery-columns-4 .attachment-thumbnail { max-width: 84%; height: auto; } 
+.gallery .gallery-caption { font-size: 12px; margin: 0 0 12px; }
+.gallery dl { margin: 0; }
+.gallery br+br { display: none; }
+.content .attachment img { display: block; margin: 0 auto; }
+
+/* ________________________________________________________________________________________________________________
+							17. MOBILE 
+________________________________________________________________________________________________________________ */
+
+pre { -webkit-text-size-adjust: 140%; }
+code { -webkit-text-size-adjust: 160%; }
+.menu-main, .entry-meta, .entry-utility, .navigation, .widget-area { -webkit-text-size-adjust: 120%; }
+#site-description { -webkit-text-size-adjust: none; }
+
+/* ________________________________________________________________________________________________________________
+							18. SUPERSIZED (BACKGROUND IMAGES) 
+________________________________________________________________________________________________________________ */
+
+.rasterize { position: fixed; left: 0; top: 0; overflow: hidden; z-index: -1; height: 100%; width: 100%; }
+#supersized { position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
+#supersized img{ position:relative; display:none; outline:none; border:none; }
+#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+#supersized a { z-index:-30; position:absolute; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111;}
+#supersized a.prevslide { z-index:-20; }
+#supersized a.activeslide { z-index:-10; }
+#supersized a.prevslide img, #supersized a.activeslide img{ display:inline; }
+#controls-wrapper { margin:0 auto; height:62px; width:100%; top:0; left:0; z-index:4; position:absolute; }
+#close-bar { position: absolute; left: 0; top: 0; width: 40px; height: 20px;  z-index: 999999; }
+#controls-icon { width: 40px; height: 25px; margin-top: 5px; }
+#controls-close { width: 40px; height: 40px; position: absolute; right: 45px; bottom: 176px; }
+#controls { overflow:hidden; height:100px; text-align:left; z-index:5; padding:0; padding-left: 140px; padding-right: 115px; /* Increase padding to give thumbnails room */ }
+#slidecounter { float:right; font:23px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:bold; margin:65px 184px 18px 20px; }
+#slidecaption { overflow:hidden; float:left; width: 70%; font:16px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:bold; margin-top: 10px; margin-left: 30px; }
+#slidecaption a { font:16px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:bold; }
+#navigation { float:right; margin:5px 20px 0 0; }
+#galleryInside { width: 90%; position: absolute; max-width: 1400px; min-width: 1024px; }
+#nextthumb,#prevthumb { z-index:6; display:none; position:absolute; top:10px; height:75px; width:100px; overflow:hidden; background:#ddd; border:2px solid #fff; -webkit-box-shadow:0 0 5px #000; }
+#nextthumb { right:12px; }
+#prevthumb { left:40px; }
+#nextthumb img, #prevthumb img { width:150px; height:auto;  }
+#nextthumb:active, #prevthumb:active { bottom:10px; }
+#navigation > :hover,#nextthumb:hover, #prevthumb:hover { cursor:pointer; }
+
+/* ________________________________________________________________________________________________________________
+							19. SLIDER
+________________________________________________________________________________________________________________ */
+
+.coin-slider { zoom: 1; position: relative; margin-left: -20px; float: left; overflow: hidden;}
+.coin-slider img { width: 620px; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; position: absolute; width: 100%; height: 100%; z-index: 999;}
+.cs-buttons { font-size: 0px; padding: 10px; float: left; top: 0px; }
+.cs-buttons a { float: left; margin-left: 5px; height: 10px; width: 10px;  text-indent: -1000px; position: relative; z-index: 9999; }
+.cs-title { width: 560px;  padding:10px 10px 10px 50px; font-size: 18 px;}
+.cs-prev, .cs-next { padding: 0px 10px; }
+
+/* ________________________________________________________________________________________________________________
+							20. ISOTOPE / BRICKS
+________________________________________________________________________________________________________________ */
+
+.isotope-item { z-index: 2; }
+.isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
+.isotope, .isotope .isotope-item { -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; transition-duration: 0.8s; }
+.isotope { -webkit-transition-property: height, width; -moz-transition-property: height, width; transition-property: height, width; }
+.isotope .isotope-item { -webkit-transition-property: -webkit-transform, opacity; -moz-transition-property: -moz-transform, opacity; transition-property: transform, opacity; }
+.isotope.no-transition, .isotope.no-transition .isotope-item { -webkit-transition-duration: 0s; -moz-transition-duration: 0s; transition-duration: 0s; }
+.isotope.infinite-scrolling { -webkit-transition: none; -moz-transition: none; transition: none; }
+
+/* ________________________________________________________________________________________________________________
+							21. COLORBOX
+________________________________________________________________________________________________________________ */
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+#cboxOverlay{background:#000;}
+#colorbox{}
+#cboxTopLeft{width:14px; height:14px; background:url(images/colorbox/controls.png) no-repeat 0 0;}
+#cboxTopCenter{height:14px; background:url(images/colorbox/border.png) repeat-x top left;}
+#cboxTopRight{width:14px; height:14px; background:url(images/colorbox/controls.png) no-repeat -36px 0;}
+#cboxBottomLeft{width:14px; height:43px; background:url(images/colorbox/controls.png) no-repeat 0 -32px;}
+#cboxBottomCenter{height:43px; background:url(images/colorbox/border.png) repeat-x bottom left;}
+#cboxBottomRight{width:14px; height:43px; background:url(images/colorbox/controls.png) no-repeat -36px -32px;}
+#cboxMiddleLeft{width:14px; background:url(images/colorbox/controls.png) repeat-y -175px 0;}
+#cboxMiddleRight{width:14px; background:url(images/colorbox/controls.png) repeat-y -211px 0;}
+#cboxContent{background:#fff;}
+#cboxLoadedContent{margin-bottom:5px;}
+#cboxLoadingOverlay{background:url(images/colorbox/loading_background.png) no-repeat center center;}
+#cboxLoadingGraphic{background:url(images/colorbox/loading.gif) no-repeat center center;}
+#cboxTitle{position:absolute; bottom:-28px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
+#cboxCurrent{position:absolute; bottom:-28px; left:58px; font-weight:bold; color:#7C7C7C;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-29px; background:url(images/colorbox/controls.png) no-repeat 0px 0px; width:23px; height:23px; text-indent:-9999px;}
+#cboxPrevious{left:0px; background-position: -51px -25px;}
+#cboxPrevious.hover{background-position:-51px 0px;}
+#cboxNext{left:27px; background-position:-75px -25px;}
+#cboxNext.hover{background-position:-75px 0px;}
+#cboxClose{right:0; background-position:-100px -25px;}
+#cboxClose.hover{background-position:-100px 0px;}
+.cboxSlideshow_on #cboxSlideshow{background-position:-125px 0px; right:27px;}
+.cboxSlideshow_on #cboxSlideshow.hover{background-position:-150px 0px;}
+.cboxSlideshow_off #cboxSlideshow{background-position:-150px -25px; right:27px;}
+.cboxSlideshow_off #cboxSlideshow.hover{background-position:-125px 0px;}
+.s{ position: relative; }

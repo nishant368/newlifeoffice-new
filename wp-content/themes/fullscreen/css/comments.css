@@ -1,0 +1,56 @@
+/**********************************/
+/* ---------- COMMENTS ---------- */
+/**********************************/
+#comments							{ padding-top: 0px; }
+#comments-title						{ margin-bottom: 20px;}
+#respond            				{ padding-bottom: 10px; padding-top: 0px; }
+#respond h3         				{ padding-top: 20px; padding-bottom: 0px; margin: 0px; }
+#respond #cancel-comment-reply-link	{ display: block; position: absolute; top: 0px; right: 0px; text-align: right; font-size: 11px; text-decoration: none; padding: 0px; }
+#respond				 			{ background: url('../images/rule_light.png') top left repeat-x; }
+.dark #respond			 			{ background: url('../images/rule_dark.png') top left repeat-x; }
+
+#respond h3 small			{ text-align: right; }
+#respond p          		{ clear: both; line-height: 22px; padding-bottom: 0px; position: relative; }
+#respond p.form-submit		{ padding-top: 10px; margin: 0px;}  
+#respond label      		{ background-color: #F4F4F4; font-weight: bold; line-height: 21px; position: absolute; top: 3px; left: 10px; z-index: 10; }
+#respond form				{ padding-top: 10px; }
+#respond p.logged-in-as		{ padding-bottom: 10px; }
+
+#respond #author,
+#respond #email,
+#respond #url       		{ border: 1px solid #E8E8E8; background: #f4f4f4; color: #333333; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; display: block; font-family: Arial; font-size: 12px; margin: 0 10px 0 0; padding: 5px 8px; width: 150px; }
+#respond #comment   		{ border: 1px solid #E8E8E8; background: #f4f4f4; color: #333333; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; display: block; font-family: Arial; font-size: 12px; height: 100px; margin: 0; padding: 5px; width: 90%; }
+
+#respond #submit            { color: #111111; background: url('../images/bck_95-50.png'); border: 1px solid #e8e8e8; font-family: arial; font-size: 12px; cursor: pointer; display: inline; font-weight: bold; width: auto; padding: 5px 8px; margin: 0px; text-shadow: 1px 1px 1px rgba( 255, 255, 255, 0.5); border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;}
+.dark #respond #submit		{ color: #FFFFFF; border-color: #666666; text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.5);}
+#respond #submit:hover		{ color: #FFFFFF; background: #959595; text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.5);}
+
+#respond .required			{ display: block; width: 5px; height: 5px; background: url('../images/required.gif') top left no-repeat; position: absolute; top: 0px; left: 0px; text-indent: -9999px; font-size: 0px; line-height: 0px;}
+
+#respond .comment-notes              	{ display: none; }
+#respond .form-allowed-tags          	{ display: none; }
+#respond .comment-form-comment label 	{ display: none; }
+
+ol.commentlist                          { list-style: none outside none; padding-left: 0px !important; padding-bottom: 10px !important; padding-top: 10px; margin: 0px;}
+ol.commentlist ul                       { padding-left: 57px !important; padding-bottom: 0px !important; }
+ol.commentlist li                       { list-style-type: none !important; clear: both; padding-bottom: 0px !important; }
+ol.commentlist li div                   { /*position: relative; */}
+ol.commentlist li div:hover .reply      { display: block; }
+ol.commentlist .comment-edit-link       { color: #ff0000 !important; font-weight: bold; }
+ol.commentlist .comment-author          { clear: both; }
+ol.commentlist .comment-author img      { display: block; float: left; margin: -3px 10px 0px 0px; background: #FFFFFF; padding: 2px; border: 1px solid #CECECE; }
+ol.commentlist .comment-author .fn      	{ color: #959595; font-size: 16px; font-style: normal; font-weight: bold; }
+ol.commentlist .comment-author .fn a		{ color: #333333; text-decoration: none; }
+.dark ol.commentlist .comment-author .fn 	{ color: #a0a0a0; }
+.dark ol.commentlist .comment-author .fn a	{ color: #FFFFFF; }
+ol.commentlist .comment-meta            { display: block; font-size: 11px; padding-top: 2px; }
+ol.commentlist .comment-meta a          { text-decoration: none !important; }
+ol.commentlist .comment-body            { clear: both; padding: 0px 0px 0px 57px; }
+ol.commentlist .reply                   { display: none; float: right; }
+ol.commentlist .reply a         		{ text-decoration: none !important; background: url('../images/glass_dark.png') 0px -7px repeat-x #333333; color:#ffffff; display:block; font-family:arial; font-size:11px; font-weight: bold; padding: 2px 12px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.dark ol.commentlist .reply a         	{ color:#ffffff; background: url('../images/glass_light.png') 0px -7px repeat-x #555555;}
+ol.commentlist .reply a:hover			{ color: #ffffff; background-color: #666666;}
+ol.commentlist #respond                 { padding-bottom: 20px; margin-left: 57px; background: none; }
+ol.commentlist #respond h3				{ padding-top: 0px; position: relative; }
+ol.commentlist #respond .form-submit	{ padding-bottom: 0px; margin: 0px;}
+
