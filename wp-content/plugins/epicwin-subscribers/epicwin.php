@@ -3,42 +3,38 @@
 Plugin Name: Epicwin Plugin
 Plugin URI: http://www.epicwindesigns.com/projects
 Description: This plugin allows your blog visitors to subscribe to your blog via email and receive notifications whenever you create a new post. You can control everything from the Wordpress admin.
-Version: 1.5
+Version: 2.0
 Author: Antonio V Mendes De Araujo
 Author URI: http://www.epicwindesigns.com
 */
-
 /*  Copyright 2010 Antonio V. Mendes De Araujo (email: antonio@epicwindesigns.com )
-
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 2 of the License, or
     (at your option) any later version.
-
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-
+error_reporting(E_ERROR);
 DEFINE('ADMIN_URL', admin_url('admin.php?page=epicwin-subscribers'));
 
 // Plugin activation:
 function epicwin_install() {
 	global $wp_version;
 	global $wpdb;
-	
+
 	if (version_compare($wp_version, '2.9', '<')) {
 		deactivate_plugins(basename(__FILE__));
 		wp_die('This plugin requires WordPress version 2.9 or higher.');
 	} else {
 		$wpdb->query($wpdb->prepare("CREATE TABLE epicwin_feed (id INT(5) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, email VARCHAR(100) NOT NULL, name VARCHAR(30), opt_in TINYINT(1), UNIQUE(email));"));
 	}
-	
+
 }
 register_activation_hook(__FILE__, 'epicwin_install');
 
@@ -64,72 +60,152 @@ function epicwin_styles() {
 }
 add_action('wp_head', 'epicwin_styles');
 
+function epicwin_scripts(){
+echo "<script type='text/javascript'>
+		jQuery('document').ready(function(){
+		jQuery(document).on('submit','form#epicwin_subscription',function(e){
+			e.preventDefault();
+				var sub_email = jQuery('#subnewsemail').val();
+				//alert(sub_email);
+				jQuery.ajax({
+					url:'".esc_url( home_url( '/' ) )."wp-admin/admin-ajax.php',
+					type:'POST',
+					data: {
+						  sub_email:sub_email,
+						  action:'check_info_details'
+						  },
+					success:function(results)
+					{
+						console.log(results);
+						jQuery('.epic_results').html(results);
+						jQuery('#subnewsemail').val('');
+						
+						jQuery('.epic_results').show(10).delay(4000).hide(100,function(){
+							jQuery(this).empty();
+						});
+						if(results.indexOf('success') >= 0 ){
+							
+							if(jQuery('#epicwin_subscription').find('span.btn-result').length == 0){
+jQuery('#epicwin_subscription').append('<span class=\"btn-result success-msg\">Success</span>');
+							}
+							jQuery('#subnewsemail').addClass('success123');
+						}
+						else if(results.indexOf('error') >= 0 ){
+							
+							if(jQuery('#epicwin_subscription').find('span.btn-result').length == 0){
+jQuery('#epicwin_subscription').append('<span class=\"btn-result error-msg\">Please type in a valid email</span>');
+							}
+							
+							jQuery('#subnewsemail').addClass('error123');
+							
+						}
+						jQuery('#epicwin_subscription span.btn-result').show().delay(4000).show(100,function(){
+							jQuery(this).remove();
+							jQuery('#subnewsemail').removeClass('error123');
+						});
+						
+					},
+					 complete:function(){
+						//console.log('Done');
+						jQuery('.loading').hide();
+						
+					},
+					beforeSend:function(){
+						console.log('Doing....');
+						jQuery('.loading').show();
+						//jQuery('.epic_results').show();
+					}
+				});
+
+			});
+
+	});
+
+
+</script>";
+}
+add_action('wp_footer', 'epicwin_scripts');
+
+
 // Return the current url in order to set the method attribute for the forms:
 function currentUrl() {
 	$url = add_query_arg(array());
 	return $url;
 }
 
-function get_epicwin_box() { 
+function get_epicwin_box() {
 	global $wpdb; ?>
 	<div class="widget_epicwin_widget">
-		<form method="post" action="<?php echo currentUrl() ?>" class="epicwin-subscription">
-			<table>
-				<tr>
-					<td><label><?php _e('Name') ?>: </label></td>
-					<td><input type="text" name="sub_name" /></td>
-				</tr>
-				<tr>
-					<td><label><?php _e('Email') ?>: </label></td>
-					<td><input type="text" name="sub_email" /></td>
-				</tr>
-				<tr>
-					<td><input type="hidden" name="action" value="subscribe" /></td>
-					<td><button type="submit"><?php _e('Subscribe') ?></button></td>
-				</tr>
-			</table>
+		<p>
+			<?php dynamic_sidebar('Newsletter Description'); ?>
+        </p>
+		<form method="post" action="<?php echo currentUrl() ?>" class="epicwin-subscription" id="epicwin_subscription" >
+					<!--<input placeholder="<?php _e('Name') ?>" type="text" name="sub_name" class="news_text" id="subnewsname"/>-->
+					<input placeholder="<?php _e('Enter your email here') ?>" type="text" name="sub_email" class="news_text" id="subnewsemail" />
+					<input type="hidden" name="action" value="subscribe" />
+						<input type="submit" class="ok-btn" name="image" id="sidebar_button" value="Subscribe">
+						<div class="loading"></div>
+					<!--<input  type="button" id="sidebar_button" class="sub_button" value="<?php _e('Go') ?>"></input>-->
+					
 		</form>
+		
+	
+		<div class="epic_results"></div>
+		</div>
+		
 	<?php
-	if($_POST['action'] == 'subscribe') {
+}
+	add_action('wp_ajax_check_info_details', 'check_info_details');
+	add_action('wp_ajax_nopriv_check_info_details', 'check_info_details');
+
+	function check_info_details()
+	{
+		global $wpdb;
 		$errors = array();
 		
-		if (empty($_POST['sub_name'])) {
+		//echo $_POST['sub_name'];
+		/*if (empty($_POST['sub_name'])) {
 			$errors[] = 'Please type in your name';
 		} else {
 			$sub_name = strip_tags($_POST['sub_name']);
-		}
+		}*/
 		
-		if (filter_input(INPUT_POST, 'sub_email', FILTER_VALIDATE_EMAIL)) {
-			$sub_email = $_POST['sub_email'];
-		} else {
-			$errors[] = 'Please type in a valid email';
+		if( $_POST['sub_email'] != '' ){
+			if (filter_input(INPUT_POST, 'sub_email', FILTER_VALIDATE_EMAIL)) {
+				$sub_email = $_POST['sub_email'];
+			} else {
+				$errors[] = 'Please type in a valid email';
+			}
+		}else{
+			$errors[] = 'Please type in an email';
 		}
-		
 		if ($errors) {
 			echo '<div class="errors">';
-			
+
 			foreach ($errors as $error) {
-				echo '<p class="error">- ' . $error . '</p>';
+				echo '<p class="error"> ' . $error . '</p>';
 			}
 			echo '</div>';
-			
+
 		}	else {
-			$res = $wpdb->query($wpdb->prepare("SELECT email FROM epicwin_feed WHERE email='{$_POST['sub_email']}'"));
+			$res = $wpdb->query($wpdb->prepare("SELECT email FROM epicwin_feed WHERE email='{$_POST['sub_email']}'",1,1));
 			if ($res > 0) {
-				if ($wpdb->query($wpdb->prepare("UPDATE epicwin_feed SET opt_in=1 WHERE email='{$_POST['sub_email']}'"))) {
+				if ($wpdb->query($wpdb->prepare("UPDATE epicwin_feed SET opt_in=1 WHERE email='{$_POST['sub_email']}'",1,1))) {
 					echo '<p class="success">You have been subscribed!</p>';
 				} else {
-					echo '<p class="success">You are already subscribed!</p>';
+					echo '<p class="error alreadysub">You are already subscribed!</p>';
 				}
 			}
-			
+
 			if($wpdb->insert('epicwin_feed', array('email' => $sub_email, 'name' => $sub_name, 'opt_in' => 1), array('%s', '%s', '%d'))) {
 				echo '<p class="success">You have been subscribed!</p>';
 			}
 		}
+	exit(1);
 	}
-	echo '</div>';
-}
+
+	//echo '</div>';
+
 
 // Create the plugin settings page:
 function epicwin_settings_page() {
@@ -140,11 +216,11 @@ function epicwin_settings_page() {
 	} else {
 		// Export as a comma separate value:
 		if ($_POST['csv_export'] == 'csv_export') {
-			$q = $wpdb->get_results($wpdb->prepare("SELECT * FROM epicwin_feed"));
+			$q = $wpdb->get_results($wpdb->prepare("SELECT * FROM epicwin_feed",1,1));
 			if (file_exists(str_replace('\\', '/', WP_PLUGIN_DIR) . '/epicwin-subscribers/subscribers.csv')) {
 				if (count($q) > 0) {
 					$file = fopen(str_replace('\\', '/', WP_PLUGIN_DIR) . '/epicwin-subscribers/subscribers.csv', 'w');
-					
+
 					foreach ($q as $row) {
 						fwrite($file, $row->name . ', ' . $row->email . ', ' . $row->opt_in . "\n");
 					}
@@ -154,7 +230,7 @@ function epicwin_settings_page() {
 			} else {
 				if (count($q) > 0) {
 					$file = fopen(str_replace('\\', '/', WP_PLUGIN_DIR) . '/epicwin-subscribers/subscribers.csv', 'w');
-					
+
 					foreach ($q as $row) {
 						fwrite($file, $row->name . ', ' . $row->email . ', ' . $row->opt_in . "\n");
 					}
@@ -163,7 +239,7 @@ function epicwin_settings_page() {
 				}
 			}
 		}
-		
+
 		if(isset($_POST['delete'])) {
 			if (unlink(str_replace('\\', '/', WP_PLUGIN_DIR) . '/epicwin-subscribers/subscribers.csv')) {
 				echo '<div class="updated"><p>The file was deleted succesfully.</p></div>';
@@ -171,7 +247,7 @@ function epicwin_settings_page() {
 				echo '<div class="error">The file could not be deleted, please verify if the file exists and try again.</p></div>';
 			}
 		}
-		
+
 		if (isset($_GET['opt'])) {
 			$update = $wpdb->query($wpdb->prepare("DELETE FROM epicwin_feed WHERE id=" . $_GET['id']));
 			if($delete) {
@@ -180,27 +256,28 @@ function epicwin_settings_page() {
 				echo '<div class="error">There was an error while trying to delete the record. Please try again.</p></div>';
 			}
 		}
-		
+
 		if (isset($_GET['id'])) {
-			$delete = $wpdb->query($wpdb->prepare("DELETE FROM epicwin_feed WHERE id=" . $_GET['id']));
+			$delete = $wpdb->query($wpdb->prepare("DELETE FROM epicwin_feed WHERE id=" . $_GET['id'],1));
 			if($delete) {
 				echo '<div class="updated"><p>The record was deleted succesfully.</p></div>';
 			} else {
 				echo '<div class="error"><p>There was an error while trying to delete the record. Please try again.</p></div>';
 			}
 		}
-		
+
 		if (isset($_POST['import'])) {
 			if ($_FILES['upload']['size'] > 0) {
 				if (end(explode('.', strtolower($_FILES['upload']['name']))) == 'csv') {
-					$query = "INSERT INTO epicwin_feed VALUES ";
+					$query = "INSERT INTO epicwin_feed VALUES";
 					$row = file($_FILES['upload']['tmp_name']);
 					foreach($row as $key => $value) {
 						$entry[$key] = explode(',', $value);
 						$query .= "(null, '{$entry[$key][1]}', '{$entry[$key][0]}', '{$entry[$key][2]}'), ";
 					}
 					$query = substr($query, 0, (strlen($query) - 2)) . ';';
-					if($wpdb->query($wpdb->prepare($query))) {
+					
+					if($wpdb->query($wpdb->prepare($query,1))) {
 						echo '<div class="updated"><p>The CSV file has been imported.</p></div>';
 					}
 				} else {
@@ -210,7 +287,7 @@ function epicwin_settings_page() {
 				echo '<div class="error"><p>Error: Please select a CSV file to upload.</p></div>';
 			}
 		}
-		
+
 		if (isset($_GET['updated'])) {
 			echo '<div class="updated"><p>Email Settings Saved</p></div>';
 		}
@@ -232,7 +309,7 @@ function epicwin_settings_page() {
 								<?php endif; ?>
 								<input type="hidden" name="csv_export" value="csv_export" />
 							</form>
-							
+
 						<?php if (file_exists(str_replace('\\', '/', WP_PLUGIN_DIR) . '/epicwin-subscribers/subscribers.csv')):?>
 							<form action ="<?php echo ADMIN_URL ?>" method="post" style="float: left; width: auto; margin-right: 10px;">
 								<input type="submit" value="<?php _e('Delete CSV') ?>" />
@@ -293,13 +370,13 @@ function epicwin_settings_page() {
 														<option value="20" selected="selected">20</option>
 														<option value="30">30</option>';
 														break;
-														
+
 													case '30':
 														echo '<option value="10">10</option>
 														<option value="20">20</option>
 														<option value="30" selected="selected">30</option>';
 														break;
-														
+
 													default:
 														echo '<option value="10" selected="selected">10</option>
 														<option value="20">20</option>
@@ -323,7 +400,7 @@ function epicwin_settings_page() {
 							<table cellspacing="0" border="0" class="widefat">
 								<thead>
 									<tr>
-										<th><?php _e('Name') ?>:</th>
+									<!--	<th><?php _e('Name') ?>:</th>-->
 										<th><?php _e('Email') ?>:</th>
 										<th><?php _e('Opt-In') ?>:</th>
 										<th><?php _e('Action') ?>: </th>
@@ -331,33 +408,35 @@ function epicwin_settings_page() {
 								</thead>
 								<tbody>
 								<?php
-								$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM epicwin_feed"));
-								
+								$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM %s", 'epicwin_feed'));
+
 								$numRows = count($results);
 								$rowsPerPage = (isset($_GET['record_count'])) ? $_GET['record_count'] : 10;
 								$totalPages = (isset($_GET['total_pages'])) ? $_GET['total_pages'] : ceil($numRows / $rowsPerPage);
 								$startPage = (isset($_GET['start_page'])) ? $_GET['start_page'] : 0;
 								$sort = (isset($_GET['sort'])) ? $_GET['sort'] : 'name';
 								$sortOrder = (isset($_GET['sort_order'])) ? $_GET['sort_order'] : 'ASC';
-								
-								$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM epicwin_feed ORDER BY $sort  $sortOrder LIMIT $startPage, $rowsPerPage"));
-								
+
+								$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM epicwin_feed ORDER BY $sort  $sortOrder LIMIT $startPage, $rowsPerPage",1,1));
+								//$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM epicwin_feed ORDER BY %s %s LIMIT %s, %s", $sort,$sortOrder, $startPage, $rowsPerPage));
+								//$results = $wpdb->get_results($wpdb->prepare("SELECT * FROM epicwin_feed ORDER BY $sort $sortOrder LIMIT $startPage, %s",  $rowsPerPage));
+
 								if (count($results) > 0):
-								
+
 									foreach ($results as $row):
 									?>
 										<tr>
-											<td><?php echo $row->name ?></td>
+										<!--	<td><?php echo $row->name ?></td> -->
 											<td><?php echo $row->email ?></td>
 											<?php if($row->opt_in == 0): ?>
-												<td><?php _e('No') ?></td> 
+												<td><?php _e('No') ?></td>
 											<?php else: ?>
 												<td><?php _e('Yes') ?></td>
 											<?php endif; ?>
 											<td><a href="<?php echo ADMIN_URL . '&id=' . $row->id ?>"><?php _e('Delete') ?></a></td>
 										</tr>
 									<?php endforeach; ?>
-									
+
 								<?php else: ?>
 									<tr>
 										<td colspan="4" align="center"><?php _e('There aren\'t any subscribers at this moment.') ?></td>
@@ -372,11 +451,11 @@ function epicwin_settings_page() {
 						<td><?php
 							if ($totalPages > 1) {
 								$currentPage = ($startPage/$rowsPerPage) + 1;
-								
+
 								if ($currentPage != 1) {
 									echo '<a href="' . currentUrl() . '&start_page=' . ($startPage - $rowsPerPage) . '&total_pages=' . $totalPages . '">' . _e('Previous') . '</a> ';
 								}
-								
+
 								for ($i = 1; $i <= $totalPages; $i++) {
 									if ($i !=$currentPage) {
 										echo '<a href="' . currentUrl() . '&start_page=' . (($rowsPerPage * ($i - 1))) . '&total_pages=' .$totalPages . '">' . $i . '</a> ';
@@ -384,7 +463,7 @@ function epicwin_settings_page() {
 										echo $i . ' ';
 									}
 								}
-								
+
 								if ($currentPage != $totalPages) {
 									echo '<a href="' . currentUrl() . '&start_page=' . ($startPage + $rowsPerPage) . '&total_pages=' . $totalPages . '">' . _e('Next') . '</a>';
 								}
@@ -440,7 +519,7 @@ function epicwin_settings_page() {
 		</div>
 	<?php
 	}
-	
+
 }
 
 // Create the settings menu in the admin area:
@@ -452,7 +531,7 @@ add_action('admin_menu', 'create_epicwin_menu');
 // Function to run when someone unsubscribes to the email list:
 function unsubscribe() {
 	global $wpdb;
-	
+
 	if ($_GET['action'] == 'unsubscribe'): ?>
 		<div id="unsubscribe">
 			<form action="<?php echo currentUrl() ?>" method="get">
@@ -465,7 +544,7 @@ function unsubscribe() {
 			</form>
 		</div>
 	<?php endif; ?>
-	
+
 	<?php if(isset($_GET['unsub_email']) && $_GET['unsub'] == 'yes'): ?>
 		<?php $queryResult = $wpdb->query($wpdb->prepare("UPDATE epicwin_feed SET opt_in=0 WHERE email='" . $_GET['unsub_email'] . "'"));
 		if ($queryResult > 0): ?>
@@ -480,7 +559,7 @@ function unsubscribe() {
 			</div>
 		<?php endif;
 	endif;
-	
+
 }
 add_action('wp_footer', 'unsubscribe');
 
@@ -490,27 +569,27 @@ class Epicwin_Widget extends WP_Widget {
 	function Epicwin_Widget() {
 		parent::WP_Widget(false, $name = 'Epicwin Widget');
 	}
-	
+
 	function widget($args, $instance) {
 		extract($args);
 		$title = apply_filters('widget_title', $instance['title']);
-		
-		echo $before_widget;
+
+		echo $before_widget='<div class="footer-info">';
 		if ($title)  echo $before_title . $title . $after_title;
 		get_epicwin_box();
-		echo $after_widget;
+		echo $after_widget='</div>';
 	}
-	
+
 	function update($new_instance, $old_instance) {
 		$instance = $old_instance;
 		$instance['title'] = strip_tags($new_instance['title']);
 		return $instance;
 	}
-	
+
 	function form($instance) {
 		$title = esc_attr($instance['title']); ?>
 		<p><label for="<?php echo $this->get_field_id('title') ?>"><?php _e('Title: ') ?></label><input class="widefat" id="<?php echo $this->get_field_id('title') ?>" name="<?php echo $this->get_field_name('title') ?>" type="text" value="<?php echo $title ?>" /></p>
-		<?php 
+		<?php
 	}
 
 }
@@ -519,21 +598,21 @@ class Epicwin_Widget extends WP_Widget {
 function new_post_alert() {
 	global $posts;
 	global $wpdb;
-	
+
 	if ($_POST['original_post_status'] !== 'publish' && $_POST['post_type'] == 'post' && $_REQUEST['screen'] !== 'edit-post' && $_POST['publish'] == 'Publish') {
 		$query = $wpdb->get_results($wpdb->prepare("SELECT id, email FROM epicwin_feed WHERE opt_in=1"));
 		query_posts(array('posts_per_page' => 1, post_type => 'post'));
-		
+
 		if (have_posts()): while (have_posts()): the_post();
 			$emails = array();
-			
+
 			if (count($query) > 0) {
 				foreach($query as $entry) {
 					$emails[]= $entry->email;
 				}
-				
+
 				$bcc = implode(',', $emails);
-				
+
 				$epicwin_title = (get_the_title()) ? get_the_title() : 'Click Here';
 				$from = get_option('epicwin_email_from') ? get_option('epicwin_email_from') : get_userdata(1)->user_firstname . ' ' . get_userdata(1)->user_lastname . ' <' . get_userdata(1)->user_email . '>';
 				$subject = (get_option('epicwin_email_subject')) ? get_option('epicwin_email_subject') : get_the_title();
@@ -541,15 +620,15 @@ function new_post_alert() {
 				$body .= (get_option('epicwin_email_message')) ? get_option('epicwin_email_message') : 'New post from ' . get_bloginfo('name') . '. Click the link bellow to view it: <br><a href="' . get_permalink() . '">' . $epicwin_title . '</a><br><br>';
 				$body .= 'You may unsubscribe at any time using the following link: <a href="' .  get_bloginfo('url') . '/index.php?action=unsubscribe">Unsubscribe</a></div></body></html>';
 				$body = preg_replace('/\{link\}/', '<a href="' . get_permalink() . '">' . $epicwin_title . '</a>', $body);
-				
+
 				// To send HTML mail, the Content-type header must be set
 				$headers  = 'MIME-Version: 1.0' . "\r\n";
 				$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-	
+
 				// Additional headers
 				$headers .= "From: $from" . "\r\n";
 				$headers .= "Bcc: $bcc" . "\r\n";
-				
+
 				mail($from, $subject, $body, $headers);
 			}
 		endwhile; endif; wp_reset_query();
